@@ -18,6 +18,6 @@ MonoBehaviour:
   _sprites: []
   _spriteAnis:
   - _clip: {fileID: 7400000, guid: e626092f8d5f8af4485c5c7f5c3ccbbe, type: 2}
-    _key: talk
+    _key: talking_basic
     _offset: {x: 0, y: 0, z: 0}
   _defaultAniClip: {fileID: 7400000, guid: e565becf832063b46bd599b6d3f6294a, type: 2}
