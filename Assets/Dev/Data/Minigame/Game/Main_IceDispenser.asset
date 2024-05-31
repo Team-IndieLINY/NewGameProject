@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: Main_IceDispenser
   m_EditorClassIdentifier: 
   _creationDelay: 0.016
-  _gameDuration: 2
-  _createStepWaitDurationRange: {x: 0.55, y: 0.95}
+  _gameDuration: 7.5
+  _createStepWaitDurationRange: {x: 0.63, y: 1}
   _createStepIceCountRange: {x: 2, y: 4}
-  _creationFov: 40
+  _creationFov: 45
   _creationForcePower: 15
   _creationDistanceFromPosition: 1
   _randomSizeVariation:
-  - {x: 0.75, y: 0.75, z: 0.75}
+  - {x: 0.68, y: 0.68, z: 0.68}
+  - {x: 0.78, y: 0.78, z: 0.78}
+  - {x: 0.863, y: 0.863, z: 0.863}

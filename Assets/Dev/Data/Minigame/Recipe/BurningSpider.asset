@@ -16,86 +16,86 @@ MonoBehaviour:
   _cocktail: {fileID: 11400000, guid: 0c8cc53b858e63f49aaace88a939efa5, type: 2}
   _Iceparameter:
     _countScoreParam:
-      TargetCount: 5
+      TargetCount: 15
       Range:
       - Score: 0
-        Range: {x: 151, y: 9999}
+        Range: {x: 116, y: 9999}
       - Score: 1
-        Range: {x: 111, y: 150}
+        Range: {x: 111, y: 115}
       - Score: 2
-        Range: {x: 90, y: 110}
+        Range: {x: 87, y: 110}
       - Score: 1
-        Range: {x: 50, y: 89}
+        Range: {x: 51, y: 86}
       - Score: 0
-        Range: {x: -99999, y: 49}
+        Range: {x: -99999, y: 50}
     _liquidScoreParam:
       LinePosition: 1
     _drinkData: {fileID: 0}
   _MeansurementParameter1:
     _countScoreParam:
-      TargetCount: 150
+      TargetCount: 230
       Range:
       - Score: 0
-        Range: {x: 151, y: 9999}
+        Range: {x: 136, y: 9999}
       - Score: 1
-        Range: {x: 111, y: 150}
+        Range: {x: 110, y: 135}
       - Score: 2
-        Range: {x: 90, y: 110}
+        Range: {x: 60, y: 109}
       - Score: 1
-        Range: {x: 50, y: 89}
+        Range: {x: 50, y: 59}
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.393
+      LinePosition: 0.596
     _drinkData: {fileID: 11400000, guid: bb0ca0101ebdd8b4c89034b24e735e1f, type: 2}
   _MeansurementParameter2:
     _countScoreParam:
-      TargetCount: 200
+      TargetCount: 230
       Range:
       - Score: 0
-        Range: {x: 151, y: 9999}
+        Range: {x: 136, y: 9999}
       - Score: 1
-        Range: {x: 111, y: 150}
+        Range: {x: 110, y: 135}
       - Score: 2
-        Range: {x: 90, y: 110}
+        Range: {x: 60, y: 109}
       - Score: 1
-        Range: {x: 50, y: 89}
+        Range: {x: 50, y: 59}
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.717
+      LinePosition: 0.596
     _drinkData: {fileID: 0}
   _MeansurementParameter3:
     _countScoreParam:
-      TargetCount: 200
+      TargetCount: 315
       Range:
       - Score: 0
-        Range: {x: 151, y: 9999}
+        Range: {x: 136, y: 9999}
       - Score: 1
-        Range: {x: 111, y: 150}
+        Range: {x: 110, y: 135}
       - Score: 2
-        Range: {x: 90, y: 110}
+        Range: {x: 70, y: 109}
       - Score: 1
-        Range: {x: 50, y: 89}
+        Range: {x: 50, y: 69}
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.717
+      LinePosition: 0.743
     _drinkData: {fileID: 11400000, guid: 2158f8eb11e370145ba91118571a23c7, type: 2}
   _MeansurementParameter4:
     _countScoreParam:
-      TargetCount: 200
+      TargetCount: 315
       Range:
       - Score: 0
-        Range: {x: 151, y: 9999}
+        Range: {x: 136, y: 9999}
       - Score: 1
-        Range: {x: 111, y: 150}
+        Range: {x: 110, y: 135}
       - Score: 2
-        Range: {x: 90, y: 110}
+        Range: {x: 70, y: 109}
       - Score: 1
-        Range: {x: 50, y: 89}
+        Range: {x: 50, y: 69}
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.717
+      LinePosition: 0.743
     _drinkData: {fileID: 11400000, guid: 8576e425573e4be48bb25e1d1ac6390d, type: 2}

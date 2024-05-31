@@ -322,7 +322,6 @@ GameObject:
   - component: {fileID: 3675421624406314685}
   - component: {fileID: 4300094551701177602}
   - component: {fileID: 18376016402144432}
-  - component: {fileID: 7637645879934649246}
   - component: {fileID: 3726537491577791488}
   m_Layer: 0
   m_Name: Jigger
@@ -436,53 +435,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!68 &7637645879934649246
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8847588304691832612}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: c1af82754ce699c4697dce81ab777845, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.0642848, y: 5.363882}
-  - {x: -0.9867649, y: 5.2213516}
-  - {x: -0.2211895, y: 2.641985}
-  - {x: -0.064582825, y: 2.5836067}
-  - {x: 0.13938713, y: 2.5822315}
-  - {x: 0.26424026, y: 2.6571712}
-  - {x: 1.0578556, y: 5.1623287}
-  - {x: 1.1487594, y: 5.3527136}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!50 &3726537491577791488
 Rigidbody2D:
   serializedVersion: 4

@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27556cc53f1f93a4ab1f986c3d26df5c, type: 3}
   m_Name: Main_DrinkMeasurement
   m_EditorClassIdentifier: 
-  _gameDuration: 0
-  _backToOriginDuration: 0.5
-  _measurementSpeed: 0.75
+  _gameDuration: 6.9
+  _backToOriginDuration: 0.278
+  _measurementSpeed: 0.375
   _circleCreationDelay: 0.01
   _endOfRollbackDuration: 1
   _startOfRollbackDuration: 1
-  _angle: 110.4
-  _maxAngle: 107.5
-  _liquidForce: 5
-  _defaultAngle: 74.9
-  _liquidCreationStartAngle: 107.5
-  _jiggerOffset: {x: 0.81, y: 5}
+  _angle: 82.5
+  _maxAngle: 82.5
+  _liquidForce: 2.85
+  _defaultAngle: 69.6
+  _liquidCreationStartAngle: 82.5
+  _jiggerOffset: {x: 1.2, y: 4.61}
   _maxCircleCount: 1000
