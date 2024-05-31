@@ -14,9 +14,6 @@ Shader "Custom/DashedLineShaderURP"
 
         Pass
         {
-            Name "ForwardLit"
-            Tags { "LightMode" = "UniversalForward" }
-
             Blend SrcAlpha OneMinusSrcAlpha
             ZWrite Off
             Cull Off

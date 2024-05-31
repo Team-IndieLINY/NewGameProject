@@ -7,11 +7,10 @@ using UnityEngine.UI;
 
 public class TestA : MonoBehaviour
 {
-    [DisplayInspector]
-    public DrinkData Data;
+    [DisplayInspector] public DrinkData Data;
 
     public DrinkMeasurementData GameData;
-    
+
     public Transform Target;
     public Transform MirrorTarget;
     public Transform TargetPivot;
@@ -20,7 +19,7 @@ public class TestA : MonoBehaviour
 
     public SpriteRenderer A;
     public SpriteRenderer B;
-    
+
 
     private Vector3 _targetPivot;
     private Vector3 _target;
@@ -30,7 +29,7 @@ public class TestA : MonoBehaviour
     {
         var position = TargetPivot.position;
         var position1 = Target.position;
-        
+
         _targetPivot = position;
         _target = position1;
     }
@@ -51,7 +50,7 @@ public class TestA : MonoBehaviour
         if (Data == false) return;
         if (TargetPivot == false) return;
         if (Bottle == false) return;
-        
+
         Data.EDITOR_SetPositions(TargetPivot.localPosition, Bottle.localPosition);
     }
 
@@ -62,18 +61,23 @@ public class TestA : MonoBehaviour
 
     private void SetToOrigin()
     {
-        var targetPos = DrinkMeasurementMiniGame.GetOriginDrinkPosition(Jigger.position, GameData.JiggerOffset, GameData.Angle,
-            Vector3.Distance(Data.BottlePosition, Data.RotationPivotPosition), Data.BottlePosition.magnitude);
+        var targetPos = DrinkMeasurementMiniGame.GetOriginDrinkPosition(
+            Jigger.position,
+            GameData.JiggerOffset,
+            GameData.Angle,
+            Data.BottlePosition,
+            Data.RotationPivotPosition,
+            Data.BottlePosition.magnitude);
 
 
         Target.position = targetPos;
         Target.rotation = Quaternion.identity;
-        
-        var m = DrinkMeasurementMiniGame.GetMatrix(targetPos,  targetPos + Data.RotationPivotPosition, GameData.Angle);
 
-        MirrorTarget.position = DrinkMeasurementMiniGame.GetMatrix(targetPos, Data.RotationPivotPosition + targetPos, GameData.MaxAngle)
+        var m = DrinkMeasurementMiniGame.GetMatrix(targetPos, targetPos + Data.RotationPivotPosition, GameData.Angle);
+
+        MirrorTarget.position = DrinkMeasurementMiniGame
+            .GetMatrix(targetPos, Data.RotationPivotPosition + targetPos, GameData.MaxAngle)
             .GetPosition();
-        MirrorTarget.rotation =Quaternion.Lerp(Quaternion.identity, m.rotation, GameData.MaxAngle / GameData.Angle);
-        
+        MirrorTarget.rotation = Quaternion.Lerp(Quaternion.identity, m.rotation, GameData.MaxAngle / GameData.Angle);
     }
 }

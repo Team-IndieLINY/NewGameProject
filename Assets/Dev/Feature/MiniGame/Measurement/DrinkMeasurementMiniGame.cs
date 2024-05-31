@@ -87,10 +87,10 @@ public class DrinkMeasurementMiniGame : MonoBehaviour
     }
 
     public static Vector3 GetOriginDrinkPosition(Vector3 jiggerPos, Vector2 jiggerOffset,
-        float angle, float bottleToRotationPivotLength, float bottleToPivotLength)
+        float angle, Vector3 bottleOffset, Vector3 rotationPivotOffset, float bottleToPivotLength)
     {
         var bottlePos = jiggerPos + (Vector3)jiggerOffset;
-        var pivot = bottlePos + Quaternion.AngleAxis(angle, Vector3.forward) * Vector3.down * bottleToRotationPivotLength;
+        var pivot = bottlePos + Quaternion.AngleAxis(angle, Vector3.forward) * (rotationPivotOffset - bottleOffset);
         var m = GetInverseMatrix(bottlePos, pivot, angle);
 
         return m.GetPosition() + Vector3.down * bottleToPivotLength;
@@ -141,7 +141,7 @@ public class DrinkMeasurementMiniGame : MonoBehaviour
             Jigger.position,
             Data.JiggerOffset,
             Data.Angle,
-            Vector3.Distance(Drink.BottleLocalPos, Drink.RotatingPivotLocalPos),
+            Drink.BottleLocalPos, Drink.RotatingPivotLocalPos,
             Vector3.Magnitude(Drink.BottleLocalPos)
         );
         
