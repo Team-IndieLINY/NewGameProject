@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: 5f8760c41a4a81242913a73ce01cfc50, type: 3}
   _openedSprite: {fileID: 0}
-  _bottlePosition: {x: -0.05, y: 5.43, z: 0}
-  _rotationPivotPosition: {x: -0.04, y: 1.29, z: 0}
+  _bottlePosition: {x: -0.01, y: 3.83, z: 0}
+  _rotationPivotPosition: {x: 0.09, y: -2.45, z: 0}
   _liquidMaterial: {fileID: 2100000, guid: 68a4b8d3f1d45ca4982f6b61f1f52fd5, type: 2}
   _name: "\uBE14\uB8E8 \uB808\uBAAC \uB9AC\uD050\uB974"
