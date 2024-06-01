@@ -323,6 +323,7 @@ GameObject:
   - component: {fileID: 4300094551701177602}
   - component: {fileID: 18376016402144432}
   - component: {fileID: 3726537491577791488}
+  - component: {fileID: 2283255463679706794}
   m_Layer: 0
   m_Name: Jigger
   m_TagString: Untagged
@@ -462,3 +463,86 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!68 &2283255463679706794
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8847588304691832612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.2380106, y: 5.6845427}
+  - {x: -1.1271877, y: 5.373539}
+  - {x: -1.0695324, y: 5.213414}
+  - {x: -1.0260105, y: 5.1040735}
+  - {x: -0.97237206, y: 4.945011}
+  - {x: -0.9222717, y: 4.7833443}
+  - {x: -0.8617325, y: 4.573637}
+  - {x: -0.8118458, y: 4.414172}
+  - {x: -0.7626934, y: 4.248168}
+  - {x: -0.7052574, y: 4.0429125}
+  - {x: -0.65224457, y: 3.8773966}
+  - {x: -0.6053333, y: 3.710719}
+  - {x: -0.5441055, y: 3.5036478}
+  - {x: -0.49074554, y: 3.3394928}
+  - {x: -0.43951988, y: 3.1788025}
+  - {x: -0.38041496, y: 2.9742699}
+  - {x: -0.32706642, y: 2.8136005}
+  - {x: -0.27397156, y: 2.705494}
+  - {x: -0.25481987, y: 2.6759968}
+  - {x: -0.23957253, y: 2.663374}
+  - {x: -0.21945381, y: 2.6547718}
+  - {x: -0.06122589, y: 2.6561356}
+  - {x: 0.101421356, y: 2.6546307}
+  - {x: 0.25976562, y: 2.655325}
+  - {x: 0.27984428, y: 2.663702}
+  - {x: 0.29381943, y: 2.6745338}
+  - {x: 0.3142395, y: 2.7065315}
+  - {x: 0.3653679, y: 2.814642}
+  - {x: 0.41690063, y: 2.9734383}
+  - {x: 0.47886848, y: 3.1837044}
+  - {x: 0.52835083, y: 3.344923}
+  - {x: 0.57816124, y: 3.502407}
+  - {x: 0.63903236, y: 3.7133913}
+  - {x: 0.68501854, y: 3.8776503}
+  - {x: 0.7359543, y: 4.0415535}
+  - {x: 0.8022423, y: 4.2505817}
+  - {x: 0.8537178, y: 4.4167128}
+  - {x: 0.8990307, y: 4.5729437}
+  - {x: 0.95949745, y: 4.784897}
+  - {x: 1.011755, y: 4.9463024}
+  - {x: 1.0626526, y: 5.093116}
+  - {x: 1.1089783, y: 5.221121}
+  - {x: 1.1653824, y: 5.3780413}
+  - {x: 1.2774909, y: 5.672634}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
