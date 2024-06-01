@@ -1,10 +1,15 @@
 a passerby outside_a.png
-size:494,91
+size:295,233
 filter:Linear,Linear
 Layer 2
-bounds:202,2,87,290
+bounds:2,144,87,290
 offsets:1,1,89,292
 rotate:90
 Layer 3
-bounds:2,8,81,198
+bounds:2,61,81,198
 rotate:90
+leg_r
+bounds:2,2,57,202
+rotate:90
+skt
+bounds:206,16,87,126

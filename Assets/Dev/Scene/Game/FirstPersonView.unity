@@ -1022,8 +1022,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507930624}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.71, y: -5.52, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.43, y: -6.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7707,6 +7707,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1344588527}
     m_Modifications:
+    - target: {fileID: 3104952566243095294, guid: a835227a9a0e8454881e060cad5d618a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fdc97dde4e4d5844f9988ce31228c012, type: 2}
     - target: {fileID: 6805570049586291646, guid: a835227a9a0e8454881e060cad5d618a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7772,6 +7777,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Passer_B
       objectReference: {fileID: 0}
+    - target: {fileID: 8136960831798915976, guid: a835227a9a0e8454881e060cad5d618a,
+        type: 3}
+      propertyPath: skeletonDataAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 02a0d7a070d371a41bbb3347f4b30d95,
+        type: 2}
     - target: {fileID: 8800381918274690387, guid: a835227a9a0e8454881e060cad5d618a,
         type: 3}
       propertyPath: m_Mesh
@@ -7969,7 +7980,7 @@ PrefabInstance:
     - target: {fileID: 445847095715327686, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.8
+      value: -1.28
       objectReference: {fileID: 0}
     - target: {fileID: 445847095715327686, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
@@ -8039,7 +8050,7 @@ PrefabInstance:
     - target: {fileID: 8733493089576712633, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
       propertyPath: m_Position
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8809428652140039257, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
@@ -8049,7 +8060,7 @@ PrefabInstance:
     - target: {fileID: 8809428652140039257, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
       propertyPath: m_PathPosition
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8809428652140039257, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
@@ -8079,6 +8090,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Passer_A
       objectReference: {fileID: 0}
+    - target: {fileID: 2060599816005989725, guid: 512ea35fa13fc0945a4493536a850d1c,
+        type: 3}
+      propertyPath: skeletonDataAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b807fcfcbf3a3b244b852ba1bda7e863,
+        type: 2}
     - target: {fileID: 2228179794473487989, guid: 512ea35fa13fc0945a4493536a850d1c,
         type: 3}
       propertyPath: m_Mesh
@@ -8134,6 +8151,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6095317388698798291, guid: 512ea35fa13fc0945a4493536a850d1c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef0103431e49162459fea3a5e7d77e19, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

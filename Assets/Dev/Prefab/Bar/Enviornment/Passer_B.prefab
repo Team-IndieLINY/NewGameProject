@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f991d99aa96b942bae2f6ebc1d0865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startPos: {x: -0.71509147, y: -4.752863, z: 17.96}
-  _endPos: {x: 19.86491, y: -4.752863, z: 17.96}
+  _startPos: {x: -0.71509147, y: -6.142863, z: 17.96}
+  _endPos: {x: 19.86491, y: -6.142863, z: 17.96}
   _resetDelay: 2
   _movementDuration: 7
 --- !u!33 &8800381918274690387
