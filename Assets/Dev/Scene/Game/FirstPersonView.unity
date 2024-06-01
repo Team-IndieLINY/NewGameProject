@@ -1050,7 +1050,7 @@ PrefabInstance:
     - target: {fileID: 4364330749864201255, guid: 1b4fd4db095081e4186a8d7aa4c00994,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -59.91
+      value: -46.45
       objectReference: {fileID: 0}
     - target: {fileID: 4396673392340570662, guid: 1b4fd4db095081e4186a8d7aa4c00994,
         type: 3}
@@ -1313,6 +1313,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LiqueurSelector
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684707078823402336, guid: 1b4fd4db095081e4186a8d7aa4c00994,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684707078823402336, guid: 1b4fd4db095081e4186a8d7aa4c00994,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -39.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601243261525426556, guid: 1b4fd4db095081e4186a8d7aa4c00994,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601243261525426556, guid: 1b4fd4db095081e4186a8d7aa4c00994,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.68
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1764,7 +1784,7 @@ MonoBehaviour:
   - position: {x: 0, y: -1.28, z: -10}
     tangent: {x: 0, y: 0, z: 0}
     roll: 0
-  - position: {x: 0, y: -16.66, z: -10}
+  - position: {x: 0, y: -18.8, z: -10}
     tangent: {x: 0, y: 0, z: 0}
     roll: 0
 --- !u!4 &622260165
@@ -4071,8 +4091,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 256946593
   m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 75e08ff3f3b91714799b7b33005a79f5, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: e2170581b79ff6542b73d82234b47cc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4092,7 +4112,7 @@ Transform:
   m_GameObject: {fileID: 1403857758}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5915, y: -14.03, z: 38.17}
+  m_LocalPosition: {x: 3.5915, y: -21.87, z: 38.17}
   m_LocalScale: {x: 0.037117995, y: 0.037117995, z: 0.037117995}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6284,11 +6304,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2021740730}
     m_Modifications:
-    - target: {fileID: 2805629040276470847, guid: 713b4997270c5b94597ec3909988d245,
-        type: 3}
-      propertyPath: _barController
-      value: 
-      objectReference: {fileID: 925680854}
     - target: {fileID: 3183492756223987339, guid: 713b4997270c5b94597ec3909988d245,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6412,12 +6427,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LiquidPour
       objectReference: {fileID: 0}
-    - target: {fileID: 6876674953488541182, guid: 40f3c4753db6f6243a0e0ee439b6477a,
-        type: 3}
-      propertyPath: _data
-      value: 
-      objectReference: {fileID: 11400000, guid: 9ce8380a370b14e49b7e67778073ea9c,
-        type: 2}
     - target: {fileID: 6876674953488541182, guid: 40f3c4753db6f6243a0e0ee439b6477a,
         type: 3}
       propertyPath: _jigger
@@ -7362,6 +7371,11 @@ PrefabInstance:
       propertyPath: _key
       value: AlcoholSelector
       objectReference: {fileID: 0}
+    - target: {fileID: 4364330749864201255, guid: 1b4fd4db095081e4186a8d7aa4c00994,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -48.43
+      objectReference: {fileID: 0}
     - target: {fileID: 4396673392340570662, guid: 1b4fd4db095081e4186a8d7aa4c00994,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7481,6 +7495,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DrinkSelector
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684707078823402336, guid: 1b4fd4db095081e4186a8d7aa4c00994,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -39.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601243261525426556, guid: 1b4fd4db095081e4186a8d7aa4c00994,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.66
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7945,7 +7969,7 @@ PrefabInstance:
     - target: {fileID: 445847095715327686, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.28
+      value: -18.8
       objectReference: {fileID: 0}
     - target: {fileID: 445847095715327686, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
@@ -8015,7 +8039,7 @@ PrefabInstance:
     - target: {fileID: 8733493089576712633, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
       propertyPath: m_Position
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8809428652140039257, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
@@ -8025,7 +8049,7 @@ PrefabInstance:
     - target: {fileID: 8809428652140039257, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
       propertyPath: m_PathPosition
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8809428652140039257, guid: 6ac956315be0b5c48a5fc4bb28c81018,
         type: 3}
