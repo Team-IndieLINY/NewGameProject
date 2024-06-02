@@ -29,4 +29,9 @@ public class DrinkPosition : MonoBehaviour
     {
         _renderer.sprite = null;
     }
+
+    private void __MiniGame_Reset__()
+    {
+        _renderer.sprite = null;
+    }
 }
