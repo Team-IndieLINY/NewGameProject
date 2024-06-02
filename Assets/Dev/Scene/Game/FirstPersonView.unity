@@ -2213,7 +2213,11 @@ MonoBehaviour:
   - BadKey: visit_man_exit_bad
     GoodKey: visit_man_exit_good
     PerfectKey: visit_man_exit_perfect
-  _requirementCocktailList: []
+  _requirementCocktailList:
+  - {fileID: 11400000, guid: cc10832ccf456624aa890744aa2f0be1, type: 2}
+  - {fileID: 11400000, guid: 0c8cc53b858e63f49aaace88a939efa5, type: 2}
+  - {fileID: 11400000, guid: eb123da6b3eabb14ba9064562ad8a258, type: 2}
+  - {fileID: 11400000, guid: e4680535554c6ea4c8395248ea320aac, type: 2}
   _controller: {fileID: 925680854}
   _iceBadScoreToNumber: 35
   _iceGoodScoreToNumber: 50
