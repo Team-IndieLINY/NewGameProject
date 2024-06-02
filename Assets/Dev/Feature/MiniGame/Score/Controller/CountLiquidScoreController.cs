@@ -47,6 +47,11 @@ public class CountLiquidScoreController : ScoreController
         _displayer = null;
     }
 
+    private void __MiniGame_Reset__()
+    {
+        Release();
+    }
+
     public void AddCount(int value)
     {
         _behaviour.CurrentScore += value;
