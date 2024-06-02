@@ -1824,18 +1824,18 @@ MonoBehaviour:
   - visit_girl1_enter
   - visit_man_enter
   _exitScriptCodeList:
-  - BadKey: visit_daughter_exit_perfect
+  - BadKey: visit_daughter_exit_bad
     GoodKey: visit_daughter_exit_good
-    PerfectKey: visit_daughter_exit_bad
-  - BadKey: visit_sommelier_exit_perfect
+    PerfectKey: visit_daughter_exit_perfect
+  - BadKey: visit_sommelier_exit_bad
     GoodKey: visit_sommelier_exit_good
-    PerfectKey: visit_sommelier_exit_bad
-  - BadKey: visit_girl1_exit_perfect
+    PerfectKey: visit_sommelier_exit_perfect
+  - BadKey: visit_girl1_exit_bad
     GoodKey: visit_girl1_exit_good
-    PerfectKey: visit_girl1_exit_bad
-  - BadKey: visit_man_exit_perfect
+    PerfectKey: visit_girl1_exit_perfect
+  - BadKey: visit_man_exit_bad
     GoodKey: visit_man_exit_good
-    PerfectKey: visit_man_exit_bad
+    PerfectKey: visit_man_exit_perfect
   _controller: {fileID: 925680854}
   _iceBadScoreToNumber: 35
   _iceGoodScoreToNumber: 50
@@ -8295,7 +8295,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _data
       value: 
-      objectReference: {fileID: 11400000, guid: c72099f7ded28d84b864140bab85365e,
+      objectReference: {fileID: 11400000, guid: a36083960c6018b468824374130ece0a,
         type: 2}
     - target: {fileID: 7443666863455283186, guid: bebd896ee5441ff4fb3c17db19467153,
         type: 3}
@@ -8418,11 +8418,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1387700669}
     m_Modifications:
-    - target: {fileID: 2527930124962505376, guid: 628b5c52237b66d4b98cafe353e06aec,
-        type: 3}
-      propertyPath: _components.Array.size
-      value: 17
-      objectReference: {fileID: 0}
     - target: {fileID: 2527930124962505376, guid: 628b5c52237b66d4b98cafe353e06aec,
         type: 3}
       propertyPath: _components.Array.data[0]
@@ -8558,21 +8553,6 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[9].value
       value: 
       objectReference: {fileID: 1928891061}
-    - target: {fileID: 3464493241446362271, guid: 628b5c52237b66d4b98cafe353e06aec,
-        type: 3}
-      propertyPath: m_SceneBindings.Array.data[10].value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3464493241446362271, guid: 628b5c52237b66d4b98cafe353e06aec,
-        type: 3}
-      propertyPath: m_SceneBindings.Array.data[11].value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3464493241446362271, guid: 628b5c52237b66d4b98cafe353e06aec,
-        type: 3}
-      propertyPath: m_SceneBindings.Array.data[12].value
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3464493241446362271, guid: 628b5c52237b66d4b98cafe353e06aec,
         type: 3}
       propertyPath: m_SceneBindings.Array.data[13].value
@@ -8712,24 +8692,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7067663645807488867, guid: 628b5c52237b66d4b98cafe353e06aec,
-        type: 3}
-      propertyPath: _data._json
-      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"npc_controller","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"NpcController,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"minigame_controller","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"MiniGameController,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"camera_controller","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"CameraController,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"maked_cocktail","value":null,"typeHandle":{"Identification":"CocktailRecipe,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"bar_controller","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"BarController,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"dialogue_controller","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"DialogueController,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"fame_hud_controller","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"HUDController,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"dummy_manager","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"DummyManager,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7067663645807488867, guid: 628b5c52237b66d4b98cafe353e06aec,
-        type: 3}
-      propertyPath: _data._objectReferences.Array.size
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7067663645807488867, guid: 628b5c52237b66d4b98cafe353e06aec,
         type: 3}
@@ -9155,7 +9117,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _data
       value: 
-      objectReference: {fileID: 11400000, guid: 926b2b673a9147c4d9ccd7a17cd79e9e,
+      objectReference: {fileID: 11400000, guid: 89cce9960dbeed74889a53a327d26a4c,
         type: 2}
     - target: {fileID: 2075917350148605577, guid: c02729386cb4acd44b2956432040b10b,
         type: 3}
