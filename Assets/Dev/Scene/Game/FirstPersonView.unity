@@ -1814,14 +1814,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _npcKeys:
+  - daughter
+  - sommelier
+  - girl1
   - man
   _enterScriptCodeList:
-  - visit_man_enter
+  - visit_daughter_enter
+  - visit_sommelier_enter
+  - visit_girl1_enter
   - visit_man_enter
   _exitScriptCodeList:
+  - BadKey: visit_daughter_exit_perfect
+    GoodKey: visit_daughter_exit_good
+    PerfectKey: visit_daughter_exit_bad
+  - BadKey: visit_sommelier_exit_perfect
+    GoodKey: visit_sommelier_exit_good
+    PerfectKey: visit_sommelier_exit_bad
+  - BadKey: visit_girl1_exit_perfect
+    GoodKey: visit_girl1_exit_good
+    PerfectKey: visit_girl1_exit_bad
   - BadKey: visit_man_exit_perfect
-    GoodKey: visit_man_exit_perfect
-    PerfectKey: visit_man_exit_perfect
+    GoodKey: visit_man_exit_good
+    PerfectKey: visit_man_exit_bad
   _controller: {fileID: 925680854}
   _iceBadScoreToNumber: 35
   _iceGoodScoreToNumber: 50

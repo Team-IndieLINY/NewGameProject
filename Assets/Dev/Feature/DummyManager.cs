@@ -116,6 +116,11 @@ public class DummyManager : MonoBehaviour
         return _npcKeys[_currentNpcKeyIndex++];
     }
 
+    public string GetCurrentNpcKeyNoShiftIndex()
+    {
+        return _npcKeys[_currentNpcKeyIndex];
+    }
+
     public EMiniGameScore JugdgeCocktailScore()
     {
         var context = _controller.Context;
