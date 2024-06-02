@@ -10,13 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 344127d8bd48760449319bb1532db4ea, type: 3}
-  m_Name: SweetJupyter
+  m_Name: No
   m_EditorClassIdentifier: 
-  _cocktailEmotionType: 2
-  _cocktailName: "\uC2A4\uC717 \uC8FC\uD53C\uD130"
-  _cockTailDescription: "\uC774 \uCE75\uD14C\uC77C\uC740 \uB2EC\uB2EC\uD574\uC11C
-    \uCE58\uACFC \uC758\uC0AC\uAC00 \uB2F9\uC2E0\uC744 \uC88B\uC544\uD558\uAC8C \uB420
-    \uAC83\uC785\uB2C8\uB2E4."
+  _cocktailEmotionType: 0
+  _cocktailName: aa
+  _cockTailDescription: bb
   _cocktailSprite: {fileID: 21300000, guid: c4fb3c25f23dc0d4b8990d8cd9d864e5, type: 3}
-  _cocktailPrice: 200
-  _prefab: {fileID: 35002261688959328, guid: c099dc010d65d0e40b9bf07d9c48fda8, type: 3}
+  _cocktailPrice: 2
+  _prefab: {fileID: 0}
