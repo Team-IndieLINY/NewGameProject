@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Test_IceDispenser
   m_EditorClassIdentifier: 
   _creationDelay: 0.016
-  _gameDuration: 3
+  _gameDuration: 0
   _createStepWaitDurationRange: {x: 0.55, y: 0.95}
   _createStepIceCountRange: {x: 2, y: 4}
   _creationFov: 40

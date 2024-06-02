@@ -62,6 +62,7 @@ public class DummyManager : MonoBehaviour
     [SerializeField] private List<string> _npcKeys;
     [SerializeField] private List<string> _enterScriptCodeList;
     [SerializeField] private List<DialougeDummyItem> _exitScriptCodeList;
+    [SerializeField] private List<CocktailData> _requirementCocktailList;
     [SerializeField] private BarController _controller;
 
     [SerializeField] private int _iceBadScoreToNumber;
@@ -94,6 +95,7 @@ public class DummyManager : MonoBehaviour
     public bool IsGotoContinueNpc => _currentNpcKeyIndex >= _npcKeys.Count;
 
     private int _currentNpcKeyIndex;
+    private int _currentCocktailIndex;
 
     public string GetCurrentEnterScriptCode()
     {
@@ -113,6 +115,7 @@ public class DummyManager : MonoBehaviour
 
     public string GetCurrentNpcKey()
     {
+        _currentCocktailIndex++;
         return _npcKeys[_currentNpcKeyIndex++];
     }
 
@@ -198,6 +201,14 @@ public class DummyManager : MonoBehaviour
         finalScoreNumber = Mathf.Clamp(finalScoreNumber, 0, 100);
         
         print(finalScoreNumber);
+        
+
+        Debug.Assert(_controller.CurrentCocktailData);
+        
+        if (_controller.CurrentCocktailData != _requirementCocktailList[_currentCocktailIndex])
+        {
+            return EMiniGameScore.Bad;
+        }
 
         if (_totalBadRange.x <= finalScoreNumber && finalScoreNumber <= _totalBadRange.y)
         {
