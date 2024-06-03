@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2551580411023180186}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +31,37 @@ Transform:
   m_Children:
   - {fileID: 3652060682291200777}
   - {fileID: 8135600857750457342}
+  m_Father: {fileID: 5575335054118112936}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1279938899788736515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1568412584850849552}
+  m_Layer: 5
+  m_Name: TipEndPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1568412584850849552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279938899788736515}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.37, y: -0.397, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 5575335054118112936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1624286972828150182
@@ -69,7 +100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.4, y: -1.48}
+  m_AnchoredPosition: {x: 0, y: -1.48}
   m_SizeDelta: {x: 1080, y: 608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1616904143437157617
@@ -146,7 +177,7 @@ GameObject:
   - component: {fileID: 5575335054118112936}
   - component: {fileID: 6626869869270974464}
   - component: {fileID: 2576351441598027810}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Shaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,6 +199,7 @@ Transform:
   m_Children:
   - {fileID: 2551580411023180186}
   - {fileID: 1139642292869636895}
+  - {fileID: 1568412584850849552}
   - {fileID: 2505233445975074455}
   - {fileID: 5456215481031502316}
   - {fileID: 7645266490376244398}
@@ -202,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tip: {fileID: 5456215481031502316}
   _tipPivot: {fileID: 1139642292869636895}
+  _tipEndPivot: {fileID: 1568412584850849552}
   _hitboxPivot: {fileID: 2505233445975074455}
   _parent: {fileID: 5575335054118112936}
   _bar: {fileID: 7645266490376244398}
@@ -215,8 +248,9 @@ MonoBehaviour:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.22, y: 1, z: 0}
   _resultMessageText: {fileID: 3120117757016490648}
-  _tipMovementSpeed: 6
-  _remainingDisableDuration: 1.25
+  _tipMovementDuration: 1
+  _gameDuration: 2
+  _remainingDisableDuration: 1
   _hitboxRandomPositionRange: {x: 0, y: 0}
 --- !u!1 &2776896355413114606
 GameObject:
@@ -228,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5456215481031502316}
   - component: {fileID: 3898326577419707837}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +278,7 @@ Transform:
   m_GameObject: {fileID: 2776896355413114606}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.8757997, y: -0.39699888, z: 0}
+  m_LocalPosition: {x: -3.9696496, y: -0.3970008, z: 0}
   m_LocalScale: {x: 3.5898, y: 3.5898, z: 3.5898}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -311,7 +345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3652060682291200777}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PerfectHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7645266490376244398}
   - component: {fileID: 3412198558789057622}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8135600857750457342}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NormalHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ABCDEF
+  m_text: Bad
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 87ad96f160430de458ea18f6bb2462b7, type: 2}
   m_sharedMaterial: {fileID: -6633197366286672688, guid: 87ad96f160430de458ea18f6bb2462b7,
@@ -592,7 +626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2505233445975074455}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HitboxPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1139642292869636895}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TipPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,6 +12,7 @@ public class ShakingMiniGameController : MonoBehaviour
 {
     [SerializeField] private Transform _tip;
     [SerializeField] private Transform _tipPivot;
+    [SerializeField] private Transform _tipEndPivot;
     [SerializeField] private Transform _hitboxPivot;
     [SerializeField] private Transform _parent;
     [SerializeField] private Transform _bar;
@@ -25,7 +26,8 @@ public class ShakingMiniGameController : MonoBehaviour
 
     [SerializeField] private TMP_Text _resultMessageText;
 
-    [SerializeField] private float _tipMovementSpeed = 1f;
+    [SerializeField] private float _tipMovementDuration = 1f;
+    [SerializeField] private float _gameDuration = 1f;
     [SerializeField] private float _remainingDisableDuration = 2f;
 
     [field: SerializeField] private Vector2 _hitboxRandomPositionRange = new Vector2(-5f, 5f);
@@ -61,6 +63,10 @@ public class ShakingMiniGameController : MonoBehaviour
         _tip.position = _tipPivot.position;
         _hitboxContainer.position = GetRandomHitboxStartPosition();
 
+        float tipT = 0f;
+        float dir = 1f;
+        float timer = 0f;
+        
         EMiniGameScore rank = EMiniGameScore.Bad;
         
         _parent.gameObject.SetActive(true);
@@ -99,9 +105,29 @@ public class ShakingMiniGameController : MonoBehaviour
                 _resultMessageText.text = "Bad!";
                 break;
             }
-            
-            _tip.position += Time.deltaTime * _tipMovementSpeed * Vector3.right;
 
+            
+            if (tipT > 1f)
+            {
+                dir = -1f;
+            }
+            else if (tipT < 0f)
+            {
+                dir = 1f;
+            }
+            
+            tipT +=  Time.deltaTime * (1f / _tipMovementDuration) * dir;
+
+            
+            _tip.position = Vector3.Lerp(_tipPivot.position, _tipEndPivot.position, tipT);
+
+            if (timer >= _gameDuration)
+            {
+                _resultMessageText.text = "Bad";
+                break;
+            }
+
+            timer += Time.deltaTime;
             await UniTask.WaitForEndOfFrame();
         }
         
