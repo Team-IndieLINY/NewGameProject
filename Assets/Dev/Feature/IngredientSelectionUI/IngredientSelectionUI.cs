@@ -122,7 +122,7 @@ public class IngredientSelectionUI : MonoBehaviour
             _ingredientPrefabs[i - 1] = _ingredientPrefabs[i];
             _ingredientPrefabs[i] = null;
             
-            if (i == _ingredientPrefabs.Length - 1 && _ingredientCaptureIndexRange.y - i <= 0)
+            if (i == _ingredientPrefabs.Length - 1 && _ingredientDatas.Length - _ingredientCaptureIndexRange.y - 1 >= 0)
             {
                 _ingredientPrefabs[i] = Instantiate(_ingredientPrefab,
                     _ingredientTransforms[i].position,
