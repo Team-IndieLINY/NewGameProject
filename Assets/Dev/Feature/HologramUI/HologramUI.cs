@@ -1,14 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Cysharp.Threading.Tasks.Triggers;
 using DG.Tweening;
 using MyBox;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class HologramUI : MonoBehaviour
@@ -265,6 +262,14 @@ public class HologramUI : MonoBehaviour
         }
     }
 
+    public void ResetEvaluateMaterialBlock()
+    {
+        _recipePreviewMaterialBlocks[0].transform.GetChild(2).gameObject.SetActive(false);
+        _recipePreviewMaterialBlocks[1].transform.GetChild(2).gameObject.SetActive(false);
+        _recipePreviewMaterialBlocks[2].transform.GetChild(2).gameObject.SetActive(false);
+        _recipePreviewMaterialBlocks[3].transform.GetChild(2).gameObject.SetActive(false);
+    }
+
     public void LoadCocktailDatas(CocktailData.CocktailType cocktailType)
     {
         List<RecipeData> cocktailDatas = CocktailTypeTable.Instance().GetCocktailData(cocktailType);
@@ -274,11 +279,16 @@ public class HologramUI : MonoBehaviour
             _cocktailButtonImages[i].sprite = null;
             _recipeDatas[i] = null;
         }
-        
+        for (int i = 0; i < _cocktailButtonImages.Count; i++)
+        {
+            _cocktailButtonImages[i].gameObject.SetActive(false);
+        }
+
         if (cocktailDatas != null)
         {
             for (int i = 0; i < cocktailDatas.Count; i++)
             {
+                _cocktailButtonImages[i].gameObject.SetActive(true);
                 _cocktailButtonImages[i].sprite = cocktailDatas[i].Cocktail.CocktailSprite;
                 _recipeDatas[i] = cocktailDatas[i];
             }
@@ -296,12 +306,14 @@ public class HologramUI : MonoBehaviour
         
         if (recipeData == null)
         {
-            _cocktailInfoImage.sprite = null;
+            _cocktailInfoImage.gameObject.SetActive(false);
             _cocktailInfoName.text = null;
             _cocktailInfoDescription.text = null;
             _cocktailInfoPrice.text = null;
             return;
         }
+        
+        _cocktailInfoImage.gameObject.SetActive(true);
         _cocktailInfoImage.sprite = recipeData.Cocktail.CocktailSprite;
         _cocktailInfoName.text = recipeData.Cocktail.CocktailName;
         _cocktailInfoDescription.text = recipeData.Cocktail.CockTailDescription;
