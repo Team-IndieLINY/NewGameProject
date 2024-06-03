@@ -220,6 +220,25 @@ public class HologramUI : MonoBehaviour
             });
     }
     
+    public void CloseSummaryWindow()
+    {
+        GetComponent<CanvasGroup>().DOFade(0f, 0.3f)
+            .OnComplete(() =>
+            {
+                _hologramPanelTransform.localScale = _hologramButtonPosTransform.localScale;
+                _hologramPanelTransform.position = _hologramButtonPosTransform.position;
+                _hologramPanelTransform.gameObject.GetComponent<RectTransform>().sizeDelta = _hologramExpandPosition.sizeDelta;
+        
+                _hologramHomePanel.SetActive(true);
+                _hologramSummaryPanel.SetActive(false);
+            })
+            .OnKill(() =>
+            {
+                GetComponent<CanvasGroup>().DOFade(1f, 0.3f);
+                _hologramButton.gameObject.SetActive(true);
+            });
+    }
+    
     public void EvaluateMaterialBlock(DrinkData drinkData, EMiniGameScore evaluateType)
     {
         if (drinkData == null)

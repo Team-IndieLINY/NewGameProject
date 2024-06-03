@@ -14,6 +14,7 @@ public class EvaluateTest : MonoBehaviour
     [ButtonMethod]
     public void Test1()
     {
+        _hologramUI.CloseSummaryWindow();
         //_hologramUI.EvaluateMaterialBlock(_testData, HologramUI.EvaluateType.Bad);
     }
     
