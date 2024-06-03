@@ -138,6 +138,7 @@ public class IngredientSelectionUI : MonoBehaviour
     
     public void TurnLeft()
     {
+        
         if ((int)_ingredientCaptureIndexRange.x == -2)
         {
             return;
