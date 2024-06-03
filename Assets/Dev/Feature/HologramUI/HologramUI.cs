@@ -44,6 +44,9 @@ public class HologramUI : MonoBehaviour
     [SerializeField] private Sprite _materialTodoSprite;
     [SerializeField] private Sprite _materialProcessSprite;
 
+    [SerializeField] private GameObject _textBlockPrefab;
+    [SerializeField] private GameObject _logWindowContent;
+
     [field: SerializeField, Foldout("칵테일 정보 UI"), PropertyName("칵테일 이미지")]
     private Image _cocktailInfoImage;
     
@@ -409,6 +412,20 @@ public class HologramUI : MonoBehaviour
         _currentRecipeData = _recipeDatas[selectedCocktailButtonIndex];
         LoadCocktailDetails(_recipeDatas[selectedCocktailButtonIndex]);
         _cocktailSelectionFrame.transform.DOMove(selectedCocktailButton.transform.position, 0.2f);
+    }
+
+    public void AddTextBlock(string name, string script)
+    {
+        GameObject temp = Instantiate(_textBlockPrefab, _logWindowContent.transform);
+        temp.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = name;
+        temp.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = script;
+    }
+    public void ResetTextBlock()
+    {
+        while (_logWindowContent.transform.childCount != 0)
+        {
+            Destroy(_logWindowContent.transform.GetChild(0));
+        }
     }
 }
  

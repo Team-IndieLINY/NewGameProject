@@ -89,7 +89,7 @@ public class IngredientSelectionUI : MonoBehaviour
 
     public void TurnRight()
     {
-        if ((int)_ingredientCaptureIndexRange.x == _ingredientPrefabs.Length - 3)
+        if ((int)_ingredientCaptureIndexRange.x == _ingredientDatas.Length - 3)
         {
             return;
         }
