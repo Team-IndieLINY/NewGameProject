@@ -80,7 +80,7 @@ MonoBehaviour:
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.717
+      LinePosition: 0.61
     _drinkData: {fileID: 11400000, guid: 3e46531a5b1843143bdd56aca161b4e6, type: 2}
   _MeansurementParameter4:
     _countScoreParam:
@@ -97,5 +97,5 @@ MonoBehaviour:
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.717
+      LinePosition: 0.61
     _drinkData: {fileID: 11400000, guid: b3b9c9470ccc4fa4ea1932e025e566bc, type: 2}
