@@ -16,76 +16,95 @@ MonoBehaviour:
   - order: 0
     script_code: visit_sommelier_enter
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uC548\uB155\uD558\uC2DC\uAC8C. \uB0B4\uAC00 \uCCAB\uC190\uB2D8\uC778\uAC00?"
+    script: "\uCC44\uD50C\uB9B0: \uB0A0\uC528 \uD55C \uBC88 \uC6B0\uC911\uCDA9\uD558\uAD70."
     pose_key: touch_mustache
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 1
     script_code: visit_sommelier_enter
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uB0B4\uAC00 \uCCAB\uC190\uB2D8\uC774 \uC544\uB2C8\uB77C\uACE0?
-      \u2026...\uC544\uC27D\uAD6C\uB9CC. \uAEC4\uAEC4"
+    script: "\uCC44\uD50C\uB9B0: \uC694\uC998 \uB098\uC774\uAC00 \uB4E4\uC5B4\uC11C
+      \uBB34\uB98E\uC774 \uC464\uC154.. <br>\uBBF8\uAC01\uB3C4 \uBAB9\uC4F8 \uBB34\uB98E
+      \uB9C8\uB0E5 \uC2DC\uC6D0\uCE58 \uC54A\uACE0 \uB9D0\uC774\uC57C."
     pose_key: 
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 2
     script_code: visit_sommelier_enter
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: <color=#6AFFFF>\uCC98\uC74C \uB9CC\uB4DC\uB294 \uCE75\uD14C\uC77C</color>\uC744
-      \uC8FC\uAC8C. \uCCAB \uBC88\uC9F8 \uC21C\uC11C\uB9CC\uD07C \uC9DC\uB9BF\uD55C
-      \uAC8C \uC5C6\uC9C0."
+    script: "\uCC44\uD50C\uB9B0: \uD56D\uC0C1 \uC7A0\uC5D0 \uB4E4\uAE30 \uC804\uC5D0,
+      \uC774 \uB9DD\uD560 \uC18C\uBBC8\uB9AC\uC5D0 <br>\uC77C\uC744 \uACC4\uC18D
+      \uD560 \uC218 \uC5C6\uC744 \uAC83 \uAC19\uB2E4\uB294 \uC0DD\uAC01\uC5D0 \uC7A0\uC744
+      <br>\uC124\uCE58\uC9C0."
     pose_key: touch_mustache
+    character_name: "\uCC44\uD50C\uB9B0"
+  - order: 3
+    script_code: visit_sommelier_enter
+    is_master: 0
+    script: "\uCC44\uD50C\uB9B0: \uADF8\uB807\uC9C0\uB9CC <color=#6AFFFF>\uC774 \uC77C\uC744
+      \uD3EC\uAE30\uD560 \uC6A9\uAE30\uB294 <br>\uB098\uC9C0 \uC54A\uC544..</color>
+      \uB098\uC758 \uC120\uD0DD\uC744 \uB3C4\uC640\uC8FC\uAC8C. \uD55C \uC794 <br>\uBD80\uD0C1\uD558\uB124."
+    pose_key: 
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 0
     script_code: visit_sommelier_exit_perfect
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uAEC4\uAEC4. \uBD88\uD0C0\uB294\uAC8C \uD654\uB048\uD558\uAD6C\uB9CC!
-      \uADF8\uB9AC\uACE0 \uB2EC\uACE0\u2026"
+    script: "\uCC44\uD50C\uB9B0: \uBAA9 \uB05D\uAE4C\uC9C0 \uD0C0\uB4E4\uC5B4 \uAC00\uB294
+      \uAE30\uBD84\uC774\uAD70."
     pose_key: 
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 1
     script_code: visit_sommelier_exit_perfect
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uC815\uB9D0 \uC88B\uC544! \uB0B4 \uCE5C\uAD6C\uB4E4\uC5D0\uAC8C\uB3C4
-      \uC18C\uAC1C\uC2DC\uCF1C\uC8FC\uACE0 \uC2F6\uC740 \uB9DB\uC774\uB124. \uAEC4\uAEC4"
+    script: "\uCC44\uD50C\uB9B0: \uB2EC\uB2EC\uD55C \uB9DB\uC774 \uB290\uAEF4\uC9C0\uB294\uB370..
+      \uB3C4\uC800\uD788 \uBAA8\uB974\uACA0\uAD70. \uC608\uC804\uC5D0 \uB098\uB77C\uBA74
+      \uB208\uCE58\uB97C \uCC58\uC744\uAE4C?"
     pose_key: touch_mustache
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 2
     script_code: visit_sommelier_exit_perfect
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uADF8\uB7FC \uB2E4\uC74C\uC5D0 \uC624\uACA0\uB124.
-      \uB2E4\uC74C\uC5D0 \uC654\uC744 \uB550 \uB354 \uC88B\uC740 \uCE75\uD14C\uC77C\uC744
-      \uBC14\uB77C\uACA0\uB124."
+    script: "\uCC44\uD50C\uB9B0: \uC9C0\uAE08 \uC0DD\uAC01\uD574\uBCF4\uB2C8 \uC774
+      \uC77C\uC744 \uC9C4\uC791\uC5D0 \uADF8\uB9CC\uB450\uC5B4\uC57C \uD558\uC9C0
+      \uC54A\uC558\uB098\uB77C\uB294 \uC0DD\uAC01\uC774 \uB4DC\uB294\uAD70. \uC88B\uC740
+      \uD55C \uC794 \uC774\uC5C8\uB124. \uC798 \uC788\uAC8C."
     pose_key: 
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 0
     script_code: visit_sommelier_exit_good
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uC369 \uAD1C\uCC2E\uAD70... \uAC1C\uC5C5\uD55C\uC9C0
-      \uC5BC\uB9C8 \uC548\uB41C \uCE75\uD14C\uC77C \uBC14\uCE58\uACE4 \uB098\uC058\uC9C0
-      \uC54A\uC740 \uAC83 \uAC19\uC544."
+    script: "\uCC44\uD50C\uB9B0: \uB9DB \uC790\uCCB4\uB294 \uAD1C\uCC2E\uC740\uB370
+      \uC774.. \uC544\uB2C8.. \uC798 \uBAA8\uB974\uACA0\uAD70.. \uBC29\uAE08 \uD55C
+      \uB9D0\uC740 \uC78A\uC5B4\uC918."
     pose_key: touch_mustache
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 1
     script_code: visit_sommelier_exit_good
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uADF8\uB7FC \uB2E4\uC74C\uC5D0 \uC624\uACA0\uB124.
-      \uB2E4\uC74C\uC5D0 \uC654\uC744 \uB550 \uB354 \uC88B\uC740 \uCE75\uD14C\uC77C\uC744
-      \uBC14\uB77C\uACA0\uB124."
+    script: "\uCC44\uD50C\uB9B0: \uC88B\uC740 \uD55C \uC794 \uC774\uC5C8\uB124. \uC798
+      \uC788\uAC8C."
     pose_key: 
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 0
     script_code: visit_sommelier_exit_bad
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uC73C\uC74C\u2026 \uAD49\uC7A5\uD788 \uD654\uB824\uD558\uC9C0\uB9CC
-      \uB9DB\uC774 \uC544\uC27D\uAD70\u2026"
+    script: "\uCC44\uD50C\uB9B0: \uB9DB \uC790\uCCB4\uB294 \uAD1C\uCC2E\uC740\uB370
+      \uC774 \uC4F4 \uB9DB\uC774.. \uC544\uB2C8 \uB2E8 \uB9DB\uC774.. \uC870\uAE08
+      \uACFC\uD558\uAD70."
     pose_key: 
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 1
     script_code: visit_sommelier_exit_bad
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uADF8\uB7FC \uB2E4\uC74C\uC5D0 \uC624\uACA0\uB124.
-      \uB2E4\uC74C\uC5D0 \uC654\uC744 \uB550 \uB354 \uC88B\uC740 \uCE75\uD14C\uC77C\uC744
-      \uBC14\uB77C\uACA0\uB124."
+    script: "\uCC44\uD50C\uB9B0: \uB0B4\uAC00 \uBE44\uB85D \uB098\uC774 \uB54C\uBB38\uC5D0
+      \uBBF8\uAC01\uC774 \uC870\uAE08 \uB354\uB514\uC9C0\uB9CC \uADF8\uB798\uB3C4
+      \uC18C\uBBC8\uB9AC\uC5D0\uB77C\uACE0!"
     pose_key: touch_mustache
+    character_name: "\uCC44\uD50C\uB9B0"
+  - order: 2
+    script_code: visit_sommelier_exit_bad
+    is_master: 0
+    script: "\uCC44\uD50C\uB9B0: \uADF8\uB798\uB3C4 \uC774\uC815\uB3C4\uBA74 \uC80B\uC740\uC774
+      \uCE58\uACE0\uB294 \uAD1C\uCC2E\uC558\uB124. \uC798 \uC788\uAC8C."
+    pose_key: 
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 0
     script_code: visit_daughter_enter
@@ -98,16 +117,16 @@ MonoBehaviour:
     script_code: visit_daughter_enter
     is_master: 1
     script: "\uC5D8\uB808\uB098: \uC694\uC998 \uB4E4\uC5B4 \uC544\uBC84\uC9C0\uC640
-      \uB9CE\uC774 \uC2F8\uC6CC\uC694. \uC0AC\uACFC\uD558\uAE30\uB3C4 \uC27D\uC9C0\uC54A\uACE0\u2026"
+      \uB9CE\uC774 \uC2F8\uC6CC\uC694. <br>\uC0AC\uACFC\uD558\uAE30\uB3C4 \uC27D\uC9C0\uC54A\uACE0\u2026"
     pose_key: 
     character_name: "\uC5D8\uB808\uB098"
   - order: 2
     script_code: visit_daughter_enter
     is_master: 1
     script: "\uC5D8\uB808\uB098: <color=#6AFFFF>\uC6A9\uAE30</color>\uAC00 \uD544\uC694\uD560
-      \uAC83 \uAC19\uC544\uC694. \uD56D\uC0C1 \uC81C\uAC00 \uBA3C\uC800 \uC0AC\uACFC\uD574\uC57C
+      \uAC83 \uAC19\uC544\uC694. \uD56D\uC0C1 \uC81C\uAC00 <br>\uBA3C\uC800 \uC0AC\uACFC\uD574\uC57C
       \uD480\uB9AC\uB294 \uC774 \uAD00\uACC4\uAC00 \uC880 \uC501\uC4F8\uD558\uAE34
-      \uD558\uB124\uC694."
+      <br>\uD558\uB124\uC694."
     pose_key: 
     character_name: "\uC5D8\uB808\uB098"
   - order: 2
