@@ -191,6 +191,28 @@
                 },
                 {
                     "name": "",
+                    "id": "6fef4a9e-962f-40cf-8f0c-dac8e773fdea",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "WinPCScheme",
+                    "action": "DialogueSkip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7551d58b-7182-4a53-8aa6-37a9c1d874c5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "WinPCScheme",
+                    "action": "DialogueSkip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "6b5099e9-86b9-4fc7-b520-cc553e322b9e",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",

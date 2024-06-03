@@ -11,6 +11,7 @@ public class ScriptEntity
     public int is_master;
     public string script;
     public string pose_key;
+    public string character_name;
 
     public int Order => order;
 
@@ -22,6 +23,8 @@ public class ScriptEntity
 
     public string PoseKey => pose_key;
 
+    public string CharacterName => character_name;
+
     public ScriptEntity Clone()
         => new ()
         {
@@ -30,5 +33,6 @@ public class ScriptEntity
             is_master = is_master,
             script = script,
             pose_key = pose_key,
+            character_name = character_name,
         };
 }
