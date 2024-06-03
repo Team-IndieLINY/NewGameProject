@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
-using UnityEditor;
+using UnityEngine;
 
 public class CocktailTypeTable
 {
@@ -24,14 +24,11 @@ public class CocktailTypeTable
     {
         _cocktailTypeTable = new Dictionary<CocktailData.CocktailType, List<RecipeData>>();
         
-        string[] guids =
-            AssetDatabase.FindAssets("", new string[] { "Assets/Dev/Data/Minigame/Recipe" });
 
-        foreach (var guid in guids)
+        var table = Resources.Load<RecipeTable>("MainRecipeTable");
+
+        foreach (var recipeData in table.Datas)
         {
-            string path = AssetDatabase.GUIDToAssetPath(guid);
-
-            RecipeData recipeData = AssetDatabase.LoadAssetAtPath<RecipeData>(path);
 
             if (_cocktailTypeTable.ContainsKey(recipeData.Cocktail.CocktailEmotionType))
             {
