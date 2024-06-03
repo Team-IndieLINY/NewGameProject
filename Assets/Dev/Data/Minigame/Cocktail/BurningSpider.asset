@@ -17,7 +17,7 @@ MonoBehaviour:
   _cockTailDescription: "\uC774 \uCE75\uD14C\uC77C\uC744 \uB9C8\uC2DC\uBA74 \uB728\uAC70\uC6C0\uC774
     \uC785\uAD6C\uBD80\uD130 \uCD9C\uAD6C\uAE4C\uC9C0 \uC804\uD574\uC9C8 \uB9CC\uD07C
     \uD654\uB048\uD558\uB2E4."
-  _resultTextColor: {r: 1, g: 0.6039216, b: 0.4392157, a: 1}
+  _resultTextColor: {r: 1, g: 1, b: 1, a: 1}
   _cocktailSprite: {fileID: 21300000, guid: 1ed1bc3ace90118499222ec317aedf74, type: 3}
   _cocktailPrice: 100
   _prefab: {fileID: 35002261688959328, guid: c099dc010d65d0e40b9bf07d9c48fda8, type: 3}

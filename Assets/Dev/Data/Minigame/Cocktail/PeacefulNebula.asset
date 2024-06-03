@@ -15,7 +15,7 @@ MonoBehaviour:
   _cocktailEmotionType: 0
   _cocktailName: " \uD53C\uC2A4\uD480 \uB124\uBDF8\uB77C"
   _cockTailDescription: "\uD53C\uC2A4\uD480 \uB124\uBDF8\uB77C \uC124\uBA85"
-  _resultTextColor: {r: 0.7296171, g: 0.28930813, b: 1, a: 1}
+  _resultTextColor: {r: 1, g: 1, b: 1, a: 1}
   _cocktailSprite: {fileID: 21300000, guid: 656e552da1a88374ba9bcb45565bdcd4, type: 3}
   _cocktailPrice: 0
   _prefab: {fileID: 4872715820146023625, guid: 2b5d87d3dbd146c42b0d6c061208e027, type: 3}
