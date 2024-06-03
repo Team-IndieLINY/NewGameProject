@@ -11,7 +11,7 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    private string SCENE = "Opening";
+    private string SCENE = "FirstPersonView";
     private AsyncOperation _asyncOperation;
 
     [SerializeField] private Image _fadeoutImage;

@@ -33,7 +33,7 @@ MonoBehaviour:
     _drinkData: {fileID: 11400000, guid: 2f2e40b1f300e2c4396dce1ab0542446, type: 2}
   _MeansurementParameter1:
     _countScoreParam:
-      TargetCount: 230
+      TargetCount: 200
       Range:
       - Score: 0
         Range: {x: 136, y: 9999}
@@ -46,11 +46,11 @@ MonoBehaviour:
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.596
+      LinePosition: 0.61
     _drinkData: {fileID: 11400000, guid: bb0ca0101ebdd8b4c89034b24e735e1f, type: 2}
   _MeansurementParameter2:
     _countScoreParam:
-      TargetCount: 230
+      TargetCount: 200
       Range:
       - Score: 0
         Range: {x: 136, y: 9999}
@@ -63,11 +63,11 @@ MonoBehaviour:
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.596
+      LinePosition: 0.61
     _drinkData: {fileID: 0}
   _MeansurementParameter3:
     _countScoreParam:
-      TargetCount: 315
+      TargetCount: 300
       Range:
       - Score: 0
         Range: {x: 136, y: 9999}
@@ -80,11 +80,11 @@ MonoBehaviour:
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.743
+      LinePosition: 0.717
     _drinkData: {fileID: 11400000, guid: 2158f8eb11e370145ba91118571a23c7, type: 2}
   _MeansurementParameter4:
     _countScoreParam:
-      TargetCount: 315
+      TargetCount: 300
       Range:
       - Score: 0
         Range: {x: 136, y: 9999}
@@ -97,5 +97,5 @@ MonoBehaviour:
       - Score: 0
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
-      LinePosition: 0.743
+      LinePosition: 0.717
     _drinkData: {fileID: 11400000, guid: 8576e425573e4be48bb25e1d1ac6390d, type: 2}
