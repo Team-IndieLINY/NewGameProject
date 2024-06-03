@@ -20,7 +20,7 @@ public class scriptTable : ScriptableObject
 			.Where(x => x.ScriptCode == scriptCode)
 			.Select(x => x.Clone())
 			.OrderBy(entity => entity.order)
-			.Select(x=> new DialogueItem(x.Script, x.IsMaster, x.PoseKey))
+			.Select(x=> new DialogueItem(x.Script, x.IsMaster, x.character_name, x.PoseKey))
 			.ToList();
 		
 		return list;

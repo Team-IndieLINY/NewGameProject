@@ -18,6 +18,8 @@ public class DialogueController : MonoBehaviour
 {
     [field: SerializeField, AutoProperty(AutoPropertyMode.Scene), InitializationField, MustBeAssigned]
     private NpcController _npcController;
+    [field: SerializeField, AutoProperty(AutoPropertyMode.Scene), InitializationField, MustBeAssigned]
+    private HologramUI _hologramUI;
     
     [field: SerializeField, InitializationField, MustBeAssigned]
     private GameObject _content;
@@ -63,6 +65,17 @@ public class DialogueController : MonoBehaviour
     public DialogueContext BeginText(string scriptCode)
     {
         var textList = _table.CreateScriptsInstance(scriptCode);
+        
+        //TODO: 더미 코드
+        if (_hologramUI)
+        {
+            _hologramUI.ResetTextBlock();
+            foreach (var item in textList)      
+            {
+                _hologramUI.AddTextBlock(item.CharacterName, item.Text);
+            }
+        }
+        
         
         var context = new DialogueContext(
             _npcController,

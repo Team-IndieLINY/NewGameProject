@@ -36,7 +36,7 @@ public class DialogueItemMaker : Unit
 
         for (int i = 0; i < Mathf.Min(texts.Count, masters.Count); i++)
         {
-            result.Add(new DialogueItem(texts[i], masters[i]));
+            result.Add(new DialogueItem(texts[i], masters[i], ""));
         }
 
         _result = result;

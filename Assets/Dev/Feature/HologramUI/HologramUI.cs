@@ -422,9 +422,9 @@ public class HologramUI : MonoBehaviour
     }
     public void ResetTextBlock()
     {
-        while (_logWindowContent.transform.childCount != 0)
+        for (int i = 0; i < _logWindowContent.transform.childCount; i++)
         {
-            Destroy(_logWindowContent.transform.GetChild(0));
+            Destroy(_logWindowContent.transform.GetChild(i).gameObject);
         }
     }
 }
