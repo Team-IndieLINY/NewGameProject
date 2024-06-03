@@ -10,12 +10,6 @@ using UnityEngine.UI;
 
 public class HologramUI : MonoBehaviour
 {
-    public enum EvaluateType
-    {
-        Bad = 0,
-        Good,
-        Perfect
-    }
     [SerializeField] private Transform _hologramButtonPosTransform;
     [SerializeField] private Transform _hologramPosTransform;
     [SerializeField] private Transform _hologramPanelTransform;
@@ -66,6 +60,8 @@ public class HologramUI : MonoBehaviour
     private Dictionary<string, CocktailData.CocktailType> _cocktailTypeTable;
     private RecipeData[] _recipeDatas = new RecipeData[3];
     private RecipeData _currentRecipeData;
+
+    public event Action<RecipeData> OnClickPreview; 
     
     private void Awake()
     {
@@ -205,6 +201,8 @@ public class HologramUI : MonoBehaviour
             _recipePreviewMaterialBlocks[3].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text =
                 _currentRecipeData.MeansurementParameter4.DrinkData.Name;
         }
+
+        OnClickPreview?.Invoke(_currentRecipeData);
     }
 
     public void OnExpandRecipeButton()
@@ -222,7 +220,7 @@ public class HologramUI : MonoBehaviour
             });
     }
     
-    public void EvaluateMaterialBlock(DrinkData drinkData, EvaluateType evaluateType)
+    public void EvaluateMaterialBlock(DrinkData drinkData, EMiniGameScore evaluateType)
     {
         if (drinkData == null)
         {
@@ -262,7 +260,7 @@ public class HologramUI : MonoBehaviour
         }
     }
 
-    public void ResetEvaluateMaterialBlock()
+    public void __MiniGame_Reset__()
     {
         _recipePreviewMaterialBlocks[0].transform.GetChild(2).gameObject.SetActive(false);
         _recipePreviewMaterialBlocks[1].transform.GetChild(2).gameObject.SetActive(false);

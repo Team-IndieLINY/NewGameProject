@@ -19,4 +19,4 @@ MonoBehaviour:
     \uAC83\uC785\uB2C8\uB2E4."
   _cocktailSprite: {fileID: 21300000, guid: c4fb3c25f23dc0d4b8990d8cd9d864e5, type: 3}
   _cocktailPrice: 200
-  _prefab: {fileID: 35002261688959328, guid: c099dc010d65d0e40b9bf07d9c48fda8, type: 3}
+  _prefab: {fileID: 6194923706597397807, guid: 51c513305214827438d9ecfd609d1734, type: 3}

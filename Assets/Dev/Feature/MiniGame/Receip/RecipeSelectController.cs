@@ -19,30 +19,33 @@ public class CountScoreChannel : PubSubMessageChannel<CountScorePipeEvent>
 
 public class RecipeSelectController : MonoBehaviour, IMessagePipePublisher<CountScorePipeEvent>
 {
-    [field: SerializeField, AutoProperty, InitializationField, MustBeAssigned]
-    private RecipeSelectView _view;
+    [field: SerializeField, AutoProperty(AutoPropertyMode.Scene), InitializationField, MustBeAssigned]
+    private HologramUI _view;
 
     [field: SerializeField, AutoProperty(AutoPropertyMode.Scene), InitializationField, MustBeAssigned]
     private BarController _barController;
 
+    public AsyncReactiveProperty<RecipeData> RecipeData { get; private set; } = new(null);
+
     private void OnEnable()
     {
-        _view.OnSelected += OnSelected;
+        _view.OnClickPreview += OnSelected;
     }
 
     private void OnDisable()
     {
-        _view.OnSelected -= OnSelected;
+        _view.OnClickPreview -= OnSelected;
     }
 
-    public async UniTask<RecipeData> Open(CancellationToken cancellationToken)
+    public void Open()
     {
-        await _view.Open(cancellationToken);
-        return _barController.CurrentRecipeData;
+        _view.OnClickOpenButton();
+        _view.OnClickRecipeIconButton();
     }
 
     private void __MiniGame_Reset__()
     {
+        RecipeData.Value = null;
         _barController.CurrentRecipeData = null;
         _barController.Context.Reset();
     }
@@ -53,6 +56,7 @@ public class RecipeSelectController : MonoBehaviour, IMessagePipePublisher<Count
 
         var context = _barController.Context;
         
+        RecipeData.Value = data;
         context.Reset();
         context.IceMaxCount = data.Iceparameter.CountScoreParam.TargetCount;
         AddTable(data.MeansurementParameter1);
