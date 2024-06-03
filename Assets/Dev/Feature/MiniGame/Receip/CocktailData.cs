@@ -29,6 +29,10 @@ public class CocktailData : ScriptableObject
     private string _cockTailDescription;
     public string CockTailDescription => _cockTailDescription;
     
+    [field: SerializeField, Foldout("칵테일 정보"), PropertyName("칵테일 글씨 색")] 
+    private Color _resultTextColor = Color.white;
+    public Color ResultTextColor => _resultTextColor;
+    
     [field: SerializeField, Foldout("칵테일 정보"), PropertyName("칵테일 스프라이트")] 
     private Sprite _cocktailSprite;
     public Sprite CocktailSprite => _cocktailSprite;

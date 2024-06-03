@@ -10,6 +10,8 @@ public class CocktailResult : MonoBehaviour
     [field: SerializeField, InitializationField, MustBeAssigned]
     private Transform _pivot;
 
+    [field: SerializeField] private HologramUI _hologramUI;
+
     [field: SerializeField]
     private TMP_Text _text;
     
@@ -27,6 +29,8 @@ public class CocktailResult : MonoBehaviour
 
         _cocktail.transform.position = _pivot.position;
         _text.text = data.CocktailName;
+        _text.color = data.ResultTextColor;
+        //TODO: 홀로그램 축소 함수 작성..
     }
     
 
