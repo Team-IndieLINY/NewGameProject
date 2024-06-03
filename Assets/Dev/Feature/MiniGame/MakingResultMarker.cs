@@ -19,7 +19,9 @@ public class MakingResultBehaviour : IMiniGameBehaviour
     {
         var barController = binder.GetComponentT<BarController>("BarController");
         var result = binder.GetComponentT<CocktailResult>("CocktailResult");
+        var hologram = binder.GetComponentT<HologramUI>("Hologram");
 
+        hologram.CloseSummaryWindow();
         result.SetCocktail(barController.CurrentCocktailData);
         
         return UniTask.CompletedTask;
