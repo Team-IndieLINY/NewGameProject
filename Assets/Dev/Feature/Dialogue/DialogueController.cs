@@ -44,6 +44,7 @@ public class DialogueController : MonoBehaviour
 
     private void Awake()
     {
+        Hide();
         StartCoroutine(CoUpdate());
     }
 

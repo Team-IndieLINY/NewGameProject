@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fadeoutSpeed: 0.5
   _fadeinSpeed: 0.5
+  _npcMoveToSlotSpeed: 1
   _fadeoutColor: {r: 0, g: 0, b: 0, a: 1}
   _fadeinColor: {r: 1, g: 1, b: 1, a: 1}

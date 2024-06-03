@@ -13,6 +13,8 @@ public class BarController : MonoBehaviour
     [SerializeField] private float _fadeinDuration = 2f;
     [SerializeField] private float _fadeoutDuration = 2f;
     [SerializeField] private RenderTexture _renderTexture;
+    [SerializeField] private GameObject _openDoor;
+    [SerializeField] private GameObject _closeDoor;
 
     private CocktailData _currentCocktailData;
 
@@ -89,6 +91,20 @@ public class BarController : MonoBehaviour
         _cocktailRenderer.color = Color.white;
         _cocktailRenderer.DOColor(Color.black, _fadeoutDuration).OnComplete(() =>
             _cocktailRenderer.gameObject.SetActive(false));
+    }
+
+    public void ChangeDoor(bool open)
+    {
+        if (open)
+        {
+            _openDoor.SetActive(true);
+            _closeDoor.SetActive(false);
+        }
+        else
+        {
+            _openDoor.SetActive(false);
+            _closeDoor.SetActive(true);
+        }
     }
 }
 
