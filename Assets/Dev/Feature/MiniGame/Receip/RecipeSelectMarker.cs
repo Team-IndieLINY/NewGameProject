@@ -18,10 +18,10 @@ public class RecipeSelectBehaviour : IMiniGameBehaviour
     public async UniTask Invoke(IMiniGameBinder binder, CancellationTokenSource source)
     {
         var controller = binder.GetComponentT<RecipeSelectController>("RecipeSelectController");
-        var summaryController = binder.GetComponentT<RecipeSummaryController>("RecipeSummaryController");
+        //var summaryController = binder.GetComponentT<RecipeSummaryController>("RecipeSummaryController");
 
-        RecipeData data = await controller.Open(source.Token);
+        controller.Open();
 
-        summaryController.Open();
+        await controller.RecipeData.WaitAsync();
     }
 }

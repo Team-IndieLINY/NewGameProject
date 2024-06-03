@@ -2,12 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using MyBox;
+using TMPro;
 using UnityEngine;
 
 public class CocktailResult : MonoBehaviour
 {
     [field: SerializeField, InitializationField, MustBeAssigned]
     private Transform _pivot;
+
+    [field: SerializeField]
+    private TMP_Text _text;
     
     private GameObject _cocktail;
     
@@ -22,6 +26,7 @@ public class CocktailResult : MonoBehaviour
         _cocktail = data.ClonePrefab();
 
         _cocktail.transform.position = _pivot.position;
+        _text.text = data.CocktailName;
     }
     
 

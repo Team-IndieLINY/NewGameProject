@@ -14,18 +14,18 @@ public class EvaluateTest : MonoBehaviour
     [ButtonMethod]
     public void Test1()
     {
-        _hologramUI.EvaluateMaterialBlock(_testData, HologramUI.EvaluateType.Bad);
+        //_hologramUI.EvaluateMaterialBlock(_testData, HologramUI.EvaluateType.Bad);
     }
     
     [ButtonMethod]
     public void Test2()
     {
-        _hologramUI.EvaluateMaterialBlock(_testData2, HologramUI.EvaluateType.Good);
+       // _hologramUI.EvaluateMaterialBlock(_testData2, HologramUI.EvaluateType.Good);
     }
     
     [ButtonMethod]
     public void Test3()
     {
-        _hologramUI.EvaluateMaterialBlock(_testData3, HologramUI.EvaluateType.Perfect);
+       // _hologramUI.EvaluateMaterialBlock(_testData3, HologramUI.EvaluateType.Perfect);
     }
 }

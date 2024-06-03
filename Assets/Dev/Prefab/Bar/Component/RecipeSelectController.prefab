@@ -221,7 +221,6 @@ GameObject:
   - component: {fileID: 3261967936919620456}
   - component: {fileID: 4771827253599651271}
   - component: {fileID: 6318137298732551283}
-  - component: {fileID: 6132174615666479732}
   m_Layer: 0
   m_Name: RecipeSelectController
   m_TagString: Untagged
@@ -271,26 +270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1495d9a90076d3e4b963eec809bd11b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _view: {fileID: 6132174615666479732}
+  _view: {fileID: 0}
   _barController: {fileID: 0}
---- !u!114 &6132174615666479732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112582012848675163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a62b04cc1adcfbb449532e6abb6ce81b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _testButton: {fileID: 1723564239832915410}
-  _data: {fileID: 11400000, guid: ed9b28e81635a9146a655e4caa34c74c, type: 2}
-  _openDuration: 1
-  _closeDuration: 1
-  _openPivot: {x: 10.362023, y: -22.283161, z: 0}
-  _closePivot: {x: -16.327976, y: -22.283161, z: 0}
 --- !u!1 &2579832278845174873
 GameObject:
   m_ObjectHideFlags: 0
