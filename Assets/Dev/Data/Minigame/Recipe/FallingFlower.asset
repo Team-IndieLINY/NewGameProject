@@ -30,7 +30,7 @@ MonoBehaviour:
         Range: {x: -99999, y: 49}
     _liquidScoreParam:
       LinePosition: 1
-    _drinkData: {fileID: 0}
+    _drinkData: {fileID: 11400000, guid: 2f2e40b1f300e2c4396dce1ab0542446, type: 2}
   _MeansurementParameter1:
     _countScoreParam:
       TargetCount: 150

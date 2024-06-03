@@ -29,7 +29,7 @@ public class RecipeSummaryController : MonoBehaviour
 
         if (context.IsIceEnd)
         {
-            //_view.EvaluateMaterialBlock(context.is);
+            _view.EvaluateMaterialBlock(_barController.CurrentRecipeData.Iceparameter.DrinkData, context.IceScore);
         }
 
         foreach (var item in context.MeasuredDrinkTable)

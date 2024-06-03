@@ -150,8 +150,8 @@ public class HologramUI : MonoBehaviour
             .DOSizeDelta(_hologramSummaryRectTransform.sizeDelta, 0.3f);
         _hologramPanelTransform.gameObject.GetComponent<RectTransform>()
             .DOAnchorPos(_hologramSummaryRectTransform.anchoredPosition, 0.3f);
-
-        if (_currentRecipeData.MeansurementParameter1.DrinkData == null)
+        print(_currentRecipeData.Iceparameter.DrinkData);
+        if (_currentRecipeData.Iceparameter.DrinkData == null)
         {
             _recipePreviewMaterialBlocks[0].SetActive(false);
         }
@@ -159,13 +159,12 @@ public class HologramUI : MonoBehaviour
         {
             _recipePreviewMaterialBlocks[0].SetActive(true);
             _recipePreviewMaterialBlocks[0].transform.GetChild(0).GetComponent<Image>().sprite =
-                _currentRecipeData.MeansurementParameter1.DrinkData.Sprite;
+                _currentRecipeData.Iceparameter.DrinkData.Sprite;
             _recipePreviewMaterialBlocks[0].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text =
-                _currentRecipeData.MeansurementParameter1.DrinkData.Name;
+                _currentRecipeData.Iceparameter.DrinkData.Name;
         }
-
         
-        if (_currentRecipeData.MeansurementParameter2.DrinkData == null)
+        if (_currentRecipeData.MeansurementParameter1.DrinkData == null)
         {
             _recipePreviewMaterialBlocks[1].SetActive(false);
         }
@@ -173,13 +172,13 @@ public class HologramUI : MonoBehaviour
         {
             _recipePreviewMaterialBlocks[1].SetActive(true);
             _recipePreviewMaterialBlocks[1].transform.GetChild(0).GetComponent<Image>().sprite =
-                _currentRecipeData.MeansurementParameter2.DrinkData.Sprite;
+                _currentRecipeData.MeansurementParameter1.DrinkData.Sprite;
             _recipePreviewMaterialBlocks[1].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text =
-                _currentRecipeData.MeansurementParameter2.DrinkData.Name;
+                _currentRecipeData.MeansurementParameter1.DrinkData.Name;
         }
 
         
-        if (_currentRecipeData.MeansurementParameter3.DrinkData == null)
+        if (_currentRecipeData.MeansurementParameter2.DrinkData == null)
         {
             _recipePreviewMaterialBlocks[2].SetActive(false);
         }
@@ -187,12 +186,13 @@ public class HologramUI : MonoBehaviour
         {
             _recipePreviewMaterialBlocks[2].SetActive(true);
             _recipePreviewMaterialBlocks[2].transform.GetChild(0).GetComponent<Image>().sprite =
-                _currentRecipeData.MeansurementParameter3.DrinkData.Sprite;
+                _currentRecipeData.MeansurementParameter2.DrinkData.Sprite;
             _recipePreviewMaterialBlocks[2].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text =
-                _currentRecipeData.MeansurementParameter3.DrinkData.Name;
+                _currentRecipeData.MeansurementParameter2.DrinkData.Name;
         }
+
         
-        if (_currentRecipeData.MeansurementParameter4.DrinkData == null)
+        if (_currentRecipeData.MeansurementParameter3.DrinkData == null)
         {
             _recipePreviewMaterialBlocks[3].SetActive(false);
         }
@@ -200,8 +200,21 @@ public class HologramUI : MonoBehaviour
         {
             _recipePreviewMaterialBlocks[3].SetActive(true);
             _recipePreviewMaterialBlocks[3].transform.GetChild(0).GetComponent<Image>().sprite =
-                _currentRecipeData.MeansurementParameter4.DrinkData.Sprite;
+                _currentRecipeData.MeansurementParameter3.DrinkData.Sprite;
             _recipePreviewMaterialBlocks[3].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text =
+                _currentRecipeData.MeansurementParameter3.DrinkData.Name;
+        }
+        
+        if (_currentRecipeData.MeansurementParameter4.DrinkData == null)
+        {
+            _recipePreviewMaterialBlocks[4].SetActive(false);
+        }
+        else
+        {
+            _recipePreviewMaterialBlocks[4].SetActive(true);
+            _recipePreviewMaterialBlocks[4].transform.GetChild(0).GetComponent<Image>().sprite =
+                _currentRecipeData.MeansurementParameter4.DrinkData.Sprite;
+            _recipePreviewMaterialBlocks[4].transform.GetChild(1).GetComponent<TextMeshProUGUI>().text =
                 _currentRecipeData.MeansurementParameter4.DrinkData.Name;
         }
 
@@ -249,7 +262,7 @@ public class HologramUI : MonoBehaviour
             return;
         }
         
-        if (_currentRecipeData.MeansurementParameter1.DrinkData == drinkData)
+        if (_currentRecipeData.Iceparameter.DrinkData == drinkData)
         {
             _recipePreviewMaterialBlocks[0].GetComponent<Image>().sprite = _materialProcessSprite;
             _recipePreviewMaterialBlocks[0].transform.GetChild(2).gameObject.SetActive(true);
@@ -257,7 +270,7 @@ public class HologramUI : MonoBehaviour
                 _materialEvaulationSprites[(int)evaluateType];
         }
         
-        if (_currentRecipeData.MeansurementParameter2.DrinkData == drinkData)
+        if (_currentRecipeData.MeansurementParameter1.DrinkData == drinkData)
         {
             _recipePreviewMaterialBlocks[1].GetComponent<Image>().sprite = _materialProcessSprite;
             _recipePreviewMaterialBlocks[1].transform.GetChild(2).gameObject.SetActive(true);
@@ -265,7 +278,7 @@ public class HologramUI : MonoBehaviour
                 _materialEvaulationSprites[(int)evaluateType];
         }
         
-        if (_currentRecipeData.MeansurementParameter3.DrinkData == drinkData)
+        if (_currentRecipeData.MeansurementParameter2.DrinkData == drinkData)
         {
             _recipePreviewMaterialBlocks[2].GetComponent<Image>().sprite = _materialProcessSprite;
             _recipePreviewMaterialBlocks[2].transform.GetChild(2).gameObject.SetActive(true);
@@ -273,11 +286,19 @@ public class HologramUI : MonoBehaviour
                 _materialEvaulationSprites[(int)evaluateType];
         }
         
-        if (_currentRecipeData.MeansurementParameter4.DrinkData == drinkData)
+        if (_currentRecipeData.MeansurementParameter3.DrinkData == drinkData)
         {
             _recipePreviewMaterialBlocks[3].GetComponent<Image>().sprite = _materialProcessSprite;
             _recipePreviewMaterialBlocks[3].transform.GetChild(2).gameObject.SetActive(true);
             _recipePreviewMaterialBlocks[3].transform.GetChild(2).GetComponent<Image>().sprite =
+                _materialEvaulationSprites[(int)evaluateType];
+        }
+        
+        if (_currentRecipeData.MeansurementParameter4.DrinkData == drinkData)
+        {
+            _recipePreviewMaterialBlocks[4].GetComponent<Image>().sprite = _materialProcessSprite;
+            _recipePreviewMaterialBlocks[4].transform.GetChild(2).gameObject.SetActive(true);
+            _recipePreviewMaterialBlocks[4].transform.GetChild(2).GetComponent<Image>().sprite =
                 _materialEvaulationSprites[(int)evaluateType];
         }
     }
