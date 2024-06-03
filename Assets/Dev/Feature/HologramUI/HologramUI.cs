@@ -46,6 +46,7 @@ public class HologramUI : MonoBehaviour
 
     [SerializeField] private GameObject _textBlockPrefab;
     [SerializeField] private GameObject _logWindowContent;
+    [SerializeField] private Button _expandButton;
 
     [field: SerializeField, Foldout("칵테일 정보 UI"), PropertyName("칵테일 이미지")]
     private Image _cocktailInfoImage;
@@ -93,8 +94,18 @@ public class HologramUI : MonoBehaviour
         
         LoadCocktailDatas(CocktailData.CocktailType.FeelGood);
         LoadCocktailDetails(_recipeDatas[0]);
+        _currentRecipeData = _recipeDatas[0];
     }
 
+    public void ActivateOpenButton()
+    {
+        _hologramButton.gameObject.SetActive(true);
+    }
+
+    public void InActivateOpenButton()
+    {
+        _hologramButton.gameObject.SetActive(false);
+    }
     public void OnClickOpenButton()
     {
         _hologramButton.gameObject.SetActive(false);
@@ -114,6 +125,7 @@ public class HologramUI : MonoBehaviour
         _hologramHomePanel.SetActive(true);
         _hologramRecipePanel.SetActive(false);
         _hologramSNSPanel.SetActive(false);
+        _hologramSummaryPanel.SetActive(false);
     }
 
     public void OnClickRecipeIconButton()
@@ -221,6 +233,15 @@ public class HologramUI : MonoBehaviour
         OnClickPreview?.Invoke(_currentRecipeData);
     }
 
+    public void ActivateExpandButton()
+    {
+        _expandButton.interactable = true;
+    }
+    
+    public void InActivateExpandButton()
+    {
+        _expandButton.interactable = false;
+    }
     public void OnExpandRecipeButton()
     {
         _hologramSummaryPanel.SetActive(false);
@@ -309,6 +330,10 @@ public class HologramUI : MonoBehaviour
         _recipePreviewMaterialBlocks[1].transform.GetChild(2).gameObject.SetActive(false);
         _recipePreviewMaterialBlocks[2].transform.GetChild(2).gameObject.SetActive(false);
         _recipePreviewMaterialBlocks[3].transform.GetChild(2).gameObject.SetActive(false);
+        _recipePreviewMaterialBlocks[4].transform.GetChild(2).gameObject.SetActive(false);
+        
+        OnClickHomeButton();
+        OnClickCloseButton();
     }
 
     public void LoadCocktailDatas(CocktailData.CocktailType cocktailType)
@@ -449,4 +474,3 @@ public class HologramUI : MonoBehaviour
         }
     }
 }
- 

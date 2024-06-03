@@ -19,5 +19,5 @@ MonoBehaviour:
     \uAC83\uC785\uB2C8\uB2E4."
   _resultTextColor: {r: 1, g: 1, b: 1, a: 1}
   _cocktailSprite: {fileID: 21300000, guid: b40cfc6d1533c3e4e8ad23123667c66a, type: 3}
-  _cocktailPrice: 200
+  _cocktailPrice: 10
   _prefab: {fileID: 6194923706597397807, guid: 51c513305214827438d9ecfd609d1734, type: 3}

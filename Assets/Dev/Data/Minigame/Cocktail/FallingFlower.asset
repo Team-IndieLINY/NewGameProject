@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cocktailEmotionType: 0
   _cocktailName: "\uD3F4\uB9C1 \uD50C\uB77C\uC6CC"
-  _cockTailDescription: "\uD3F4\uB9C1 \uD50C\uB77C\uC6CC \uC124\uBA85"
+  _cockTailDescription: "\uC678\uB85C\uC6C0\uC744 \uACAC\uB51C \uC218 \uC5C6\uB294
+    \uADF8\uB300\uC5D0\uAC8C \uBD04\uBC14\uB78C\uC744 \uB290\uB07C\uAC8C \uD574\uC904\uAC81\uB2C8\uB2E4."
   _resultTextColor: {r: 1, g: 1, b: 1, a: 1}
   _cocktailSprite: {fileID: 21300000, guid: 5508ae82aa1f43b468020800db04841a, type: 3}
-  _cocktailPrice: 100
+  _cocktailPrice: 10
   _prefab: {fileID: 3553863006415762502, guid: 9a78bef64c3184d41b9d530ebdd611b1, type: 3}

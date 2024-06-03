@@ -15,6 +15,7 @@ MonoBehaviour:
   _cocktailEmotionType: 0
   _cocktailName: aa
   _cockTailDescription: bb
+  _resultTextColor: {r: 1, g: 1, b: 1, a: 1}
   _cocktailSprite: {fileID: 21300000, guid: c4fb3c25f23dc0d4b8990d8cd9d864e5, type: 3}
-  _cocktailPrice: 2
+  _cocktailPrice: 10
   _prefab: {fileID: 0}
