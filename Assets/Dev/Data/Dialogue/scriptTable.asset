@@ -30,10 +30,8 @@ MonoBehaviour:
   - order: 2
     script_code: visit_sommelier_enter
     is_master: 0
-    script: "\uCC44\uD50C\uB9B0: \uD56D\uC0C1 \uC7A0\uC5D0 \uB4E4\uAE30 \uC804\uC5D0,
-      \uC774 \uB9DD\uD560 \uC18C\uBBC8\uB9AC\uC5D0 <br>\uC77C\uC744 \uACC4\uC18D
-      \uD560 \uC218 \uC5C6\uC744 \uAC83 \uAC19\uB2E4\uB294 \uC0DD\uAC01\uC5D0 \uC7A0\uC744
-      <br>\uC124\uCE58\uC9C0."
+    script: "\uCC44\uD50C\uB9B0: \uC80A\uC5C8\uC744 \uB54C \uCC98\uB7FC <color=#6AFFFF>\uBD88\uD0C0\uB294
+      \uC5F4\uC815\uACFC \uC6A9\uAE30\uAC00 \uC788\uC73C\uBA74</color> \uC88B\uC73C\uB828\uB9CC\u2026"
     pose_key: touch_mustache
     character_name: "\uCC44\uD50C\uB9B0"
   - order: 3
@@ -117,29 +115,39 @@ MonoBehaviour:
     script_code: visit_daughter_enter
     is_master: 1
     script: "\uC5D8\uB808\uB098: \uC694\uC998 \uB4E4\uC5B4 \uC544\uBC84\uC9C0\uC640
-      \uB9CE\uC774 \uC2F8\uC6CC\uC694. <br>\uC0AC\uACFC\uD558\uAE30\uB3C4 \uC27D\uC9C0\uC54A\uACE0\u2026"
+      \uB9CE\uC774 \uC2F8\uC6CC\uC694. <br><color=#6AFFFF>\uC0AC\uACFC\uD558\uAE30\uB3C4
+      \uC27D\uC9C0\uC54A\uACE0\u2026</color>"
     pose_key: 
     character_name: "\uC5D8\uB808\uB098"
   - order: 2
     script_code: visit_daughter_enter
     is_master: 1
-    script: "\uC5D8\uB808\uB098: <color=#6AFFFF>\uC6A9\uAE30</color>\uAC00 \uD544\uC694\uD560
-      \uAC83 \uAC19\uC544\uC694. \uD56D\uC0C1 \uC81C\uAC00 <br>\uBA3C\uC800 \uC0AC\uACFC\uD574\uC57C
-      \uD480\uB9AC\uB294 \uC774 \uAD00\uACC4\uAC00 \uC880 \uC501\uC4F8\uD558\uAE34
-      <br>\uD558\uB124\uC694."
+    script: "\uC5D8\uB808\uB098: \uC774 \uB098\uC774\uC5D0\uB3C4 \uCCA0\uC5C6\uC774
+      \uC544\uBC84\uC9C0 \uB3C8\uC744 \uC4F0\uB2C8 \uC5B4\uCA54 \uC218 \uC5C6\uAE30\uB3C4
+      \uD558\uC9C0\uB9CC.. <color=#6AFFFF>\uADF8\uB0E5 \uC6A9\uAE30\uAC00 \uD544\uC694\uD560
+      \uAC83 \uAC19\uC544\uC694.</color>   "
+    pose_key: 
+    character_name: "\uC5D8\uB808\uB098"
+  - order: 3
+    script_code: visit_daughter_enter
+    is_master: 1
+    script: "\uC5D8\uB808\uB098: \uC5B4\uB838\uC744 \uB54C <color=#6AFFFF>\uAC70\uB300\uD55C
+      \uBAA9\uC131\uCC98\uB7FC \uD488\uC5B4\uC8FC\uB358 \uBAA8\uC2B5\uC774</color>
+      \uADF8\uB9BD\uAE34\uD558\uB124\uC694."
     pose_key: 
     character_name: "\uC5D8\uB808\uB098"
   - order: 2
     script_code: visit_daughter_enter
     is_master: 1
-    script: "\uC5D8\uB808\uB098: \uD750\uC74C\u2026... \uC220 \uD558\uB098 \uCD94\uCC9C\uD574\uC8FC\uC138\uC694."
+    script: "\uC5D8\uB808\uB098: \uD750\uC74C... \uC11C\uB860\uC774 \uAE38\uC5C8\uB124\uC694,
+      \uC800\uB97C \uC704\uD574 \uC220 \uD558\uB098\uB9CC \uCD94\uCC9C\uD574\uC8FC\uC138\uC694."
     pose_key: 
     character_name: "\uC5D8\uB808\uB098"
   - order: 0
     script_code: visit_daughter_exit_perfect
     is_master: 1
-    script: "\uC5D8\uB808\uB098: \uC640... \uBC14\uD150\uB354\uB2D8 \uC2E4\uB825\uC774
-      \uC88B\uC73C\uC2DC\uAD70\uC694?"
+    script: "\uC5D8\uB808\uB098: \uC640... \uBC14\uD150\uB354\uB2D8 \uBCF4\uAE30\uBCF4\uB2E4
+      \uC2E4\uB825\uC774 \uC88B\uC73C\uC2DC\uAD70\uC694?"
     pose_key: expression_smile
     character_name: "\uC5D8\uB808\uB098"
   - order: 1
@@ -195,9 +203,16 @@ MonoBehaviour:
   - order: 2
     script_code: visit_man_enter
     is_master: 2
-    script: "\uC70C\uB9AC\uC5C4: \uBC8C\uC368 \uB108\uBB34\uB098 <color=#6AFFFF>\uC124\uB808\uB294\uB370</color>
-      \uAE30\uB150\uC8FC \uD55C \uC794 \uC8FC\uC138\uC694 \uBE0C\uB77C\uB354!"
+    script: "\uC70C\uB9AC\uC5C4: <color=#6AFFFF>\uB9C8\uCE58 \uBC9A\uAF43\uC774 \uD718\uB0A0\uB9AC\uB294
+      \uAC83 \uAC19\uC740</color> \uC774 \uCCAD\uB7C9\uAC10!"
     pose_key: talking_basic
+    character_name: "\uC70C\uB9AC\uC5C4"
+  - order: 3
+    script_code: visit_man_enter
+    is_master: 2
+    script: "\uC70C\uB9AC\uC5C4: <color=#6AFFFF>\uBC8C\uC368 \uB108\uBB34\uB098 \uC124\uB808\uB294\uB370</color>
+      \uAE30\uB150\uC8FC \uD55C \uC794 \uC8FC\uC138\uC694 \uBE0C\uB77C\uB354!"
+    pose_key: 
     character_name: "\uC70C\uB9AC\uC5C4"
   - order: 0
     script_code: visit_man_exit_perfect
@@ -252,18 +267,25 @@ MonoBehaviour:
   - order: 1
     script_code: visit_girl1_enter
     is_master: 3
-    script: "\uB808\uC774\uCCBC: \uC624\uB298\uC740 \uCC38 \uC2AC\uD508 \uC77C\uC774
-      \uC788\uC5C8\uC5B4\uC694. \uB0A8\uC790\uCE5C\uAD6C\uB791 \uB2E4\uD22C\uACE0
-      \uC624\uB298 \uD5E4\uC5B4\uC84C\uC5B4\uC694\u2026 \uC81C\uAC00 \uC798\uBABB\uD55C
-      \uAC74 \uC544\uB2CC \uAC83 \uAC19\uC740\uB370\u2026"
+    script: "\uB808\uC774\uCCBC: \uC774\uC81C \uBC15\uC0AC\uD559\uC704 \uCDE8\uB4DD\uD558\uAC8C
+      \uB418\uB294\uB370, \uC0DD\uAC01\uD55C \uAC83\uBCF4\uB2E4 \uAE30\uBD84\uC774
+      \uC88B\uB124\uC694"
     pose_key: 
     character_name: "\uB808\uC774\uCCBC"
   - order: 2
     script_code: visit_girl1_enter
     is_master: 3
-    script: "\uB808\uC774\uCCBC: \uCC38 <color=#6AFFFF>\uC11C\uB7FD\uB124\uC694</color>.
-      \uB098\uB9CC \uC774\uB7F0\uAC00 \uC5B5\uC6B8\uD558\uAE30\uB3C4 \uD558\uACE0\uC694\u2026
-      \uD558\uD558... \uC801\uB2F9\uD788 \uC220 \uCD94\uCC9C \uBD80\uD0C1\uB4DC\uB9B4\uAC8C\uC694."
+    script: "\uB808\uC774\uCCBC: \uBC15\uC0AC\uACFC\uC815\uD558\uBA74\uC11C\uB294
+      \uC815\uB9D0 \uD798\uB4E4\uACE0 \uC9C0\uCCE4\uB294\uB370, \uC5B4\uB978\uB4E4\uB9D0\uC774
+      \uD2C0\uB9B0\uAC70 \uC5C6\uB2E4\uACE0 \uB9C9\uC0C1 \uB05D\uB0B4\uB2C8 \uD1B5\uCF8C\uD558\uACE0."
+    pose_key: 
+    character_name: "\uB808\uC774\uCCBC"
+  - order: 3
+    script_code: visit_girl1_enter
+    is_master: 3
+    script: "\uB808\uC774\uCCBC: \uADF8\uB0E5 \uB108\uBB34 \uC88B\uB124\uC694, \uC0DD\uAC01\uC5C6\uC774
+      <color=#6AFFFF>\uD669\uD640\uD558\uAC8C \uCDE8\uD560 \uC218 \uC788\uAC8C</color>
+      \uC801\uB2F9\uD788 \uC220 \uCD94\uCC9C \uBD80\uD0C1\uB4DC\uB9B4\uAC8C\uC694."
     pose_key: 
     character_name: "\uB808\uC774\uCCBC"
   - order: 0
