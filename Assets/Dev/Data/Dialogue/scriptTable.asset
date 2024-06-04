@@ -289,7 +289,21 @@ MonoBehaviour:
     pose_key: talking_basic
     character_name: "\uB808\uC774\uCCBC"
   - order: 1
-    script_code: visit_girl2_exit_good
+    script_code: visit_girl1_exit_good
+    is_master: 3
+    script: "\uB808\uC774\uCCBC: \uADF8\uB798\uB3C4 \uC220\uC740 \uC801\uB2F9\uD788
+      \uB9C8\uC2DC\uB294\uAC8C \uC800\uD55C\uD14C\uB294 \uC88B\uC740 \uAC83 \uAC19\uC544\uC694."
+    pose_key: talking_basic
+    character_name: "\uB808\uC774\uCCBC"
+  - order: 0
+    script_code: visit_girl1_exit_bad
+    is_master: 3
+    script: "\uB808\uC774\uCCBC: \uC220\uC744 \uC88B\uC544\uD558\uC9C4 \uC54A\uC9C0\uB9CC
+      \uC0DD\uAC01\uBCF4\uB2E4 \uB9DB\uC788\uB124\uC694."
+    pose_key: 
+    character_name: "\uB808\uC774\uCCBC"
+  - order: 1
+    script_code: visit_girl1_exit_bad
     is_master: 3
     script: "\uB808\uC774\uCCBC: \uADF8\uB798\uB3C4 \uC220\uC740 \uC801\uB2F9\uD788
       \uB9C8\uC2DC\uB294\uAC8C \uC800\uD55C\uD14C\uB294 \uC88B\uC740 \uAC83 \uAC19\uC544\uC694."

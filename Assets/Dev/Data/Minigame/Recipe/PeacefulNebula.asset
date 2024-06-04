@@ -33,7 +33,7 @@ MonoBehaviour:
     _drinkData: {fileID: 11400000, guid: 2f2e40b1f300e2c4396dce1ab0542446, type: 2}
   _MeansurementParameter1:
     _countScoreParam:
-      TargetCount: 150
+      TargetCount: 130
       Range:
       - Score: 0
         Range: {x: 151, y: 9999}
