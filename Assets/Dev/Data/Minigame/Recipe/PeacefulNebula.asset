@@ -16,7 +16,7 @@ MonoBehaviour:
   _cocktail: {fileID: 11400000, guid: eb123da6b3eabb14ba9064562ad8a258, type: 2}
   _Iceparameter:
     _countScoreParam:
-      TargetCount: 5
+      TargetCount: 15
       Range:
       - Score: 0
         Range: {x: 151, y: 9999}
