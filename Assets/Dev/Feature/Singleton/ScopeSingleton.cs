@@ -1,119 +1,126 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using Object = UnityEngine.Object;
 
 namespace IndieLINY.Singleton
 {
+    public interface IScopeObject
+    {
+        public void Initialize();
+
+        public void Release();
+    }
+    
     [Singleton(ESingletonType.Global)]
     public class ScopeSingleton : IGeneralSingleton
     {
-        public delegate void ScopeChangedCallback(ISingleton singleton);
-        
-        private List<IMonoBehaviourSingleton> _singletons;
+        private Dictionary<Type, IScopeObject> _registeredTable;
 
-        private Dictionary<System.Type, List<ScopeChangedCallback>> _callbackTable;
+        private AsyncReactiveProperty<IScopeObject> _registerTrigger;
+        private CancellationTokenSource _cancellation;
+        
         public void Initialize()
         {
-            SceneManager.activeSceneChanged += OnActivateSceneChanged;
-            
-            _singletons = new(5);
-            _callbackTable = new();
-
-            SceneLoaded();
+            _registeredTable = new();
+            _registerTrigger = new(null);
+            _cancellation = new();
         }
 
         public void Release()
         {
-            SceneManager.activeSceneChanged -= OnActivateSceneChanged;
-
-            SceneUnloaded();
-            
-            _singletons = null;
-            _callbackTable = null;
-        }
-
-        private void OnActivateSceneChanged(Scene currentScene, Scene nextScene)
-        {
-            SceneUnloaded();
-            SceneLoaded();
-        }
-        
-
-        private void SceneUnloaded()
-        {
-            foreach (var singleton in _singletons)
+            foreach (var value in _registeredTable.Values)
             {
-                singleton.Release();
+                value.Release();
             }
             
-            _singletons.Clear();
+            _registeredTable.Clear();
+            _registeredTable = null;
+
+            _registerTrigger = null;
+            
+            _cancellation?.Cancel();
+            _cancellation = null;
         }
 
-        private void SceneLoaded()
+        public void Register<T>(IScopeObject scopeObject) where T : class, IScopeObject
         {
-            var initlaizers = Object.FindObjectsOfType<ScopeSingletonInitializer>();
-
-            if (initlaizers.Length > 1)
+            var type = scopeObject.GetType();
+            if (_registeredTable.ContainsKey(type))
             {
-                Debug.LogError("scope initializer가 scene에 2개 이상입니다.");
+                Debug.LogError($"이미 등록된 타입: {type}");
+                return;
+            }
+            
+            scopeObject.Initialize();
+            _registerTrigger.Value = scopeObject;
+            _registeredTable.Add(type, scopeObject);
+        }
+
+        public void UnRegister<T>() where T : class, IScopeObject
+        {
+            var type = typeof(T);
+            if (_registeredTable.Remove(type, out var value))
+            {
+                value.Release();
+                return;
+            }
+            
+            Debug.LogError($"등록되지 않은 타입: {type}");
+        }
+
+        public T Get<T>() where T : class, IScopeObject
+        {
+            var type = typeof(T);
+            if (_registeredTable.TryGetValue(type, out var value))
+            {
+                return value as T;
             }
 
-            if (initlaizers.Length == 0) return;
+            return null;
+        }
 
-            var initializer = initlaizers[0];
-            if (initializer.CheckValid())
+        public bool TryGet<T>(out T result) where T : class, IScopeObject
+        {
+            var type = typeof(T);
+            if (_registeredTable.TryGetValue(type, out var value))
             {
-                foreach (var singleton in initializer._singletons)
+                result = value as T;
+                return true;
+            }
+
+            result = null;
+            return false;
+        }
+
+        public bool Contains<T>() where T : class, IScopeObject
+            => _registeredTable.ContainsKey(typeof(T));
+
+        public async UniTask<T> GetAsync<T>(CancellationToken? cancellationToken = default) where T : class, IScopeObject
+        {
+            if (TryGet<T>(out var result))
+            {
+                return result;
+            }
+
+            var type = typeof(T);
+
+            var token = CancellationTokenSource.CreateLinkedTokenSource(
+                cancellationToken ?? default,
+                _cancellation.Token
+            ).Token;
+            
+            while (true)
+            {
+                IScopeObject changedValue = await _registerTrigger.WaitAsync(token);
+                
+                if (changedValue.GetType() == type)
                 {
-                    singleton.Initialize();
-                    _singletons.Add(singleton);
-
-                    TryInvokeTable(singleton);
+                    return changedValue as T;
                 }
             }
         }
-
-        private void TryInvokeTable(ISingleton singleton)
-        {
-            if (_callbackTable.TryGetValue(singleton.GetType(), out var callbacks))
-            {
-                callbacks.ForEach(x=>x.Invoke(singleton));
-            }
-        }
-
-        public T GetScopeSingleton<T>() where T : class, IMonoBehaviourSingleton
-        {
-            return _singletons.Find(x => x is T) as T;
-        }
-
-        public void RegisterScopeSingletonChanged(System.Type type, ScopeChangedCallback callback)
-        {
-            if (_callbackTable.TryGetValue(type, out var callbacks))
-            {
-                callbacks.Add(callback);
-            }
-            else
-            {
-                var list = new List<ScopeChangedCallback>(10);
-                _callbackTable.Add(type, list);
-                list.Add(callback);
-            }
-        }
-        public void UnRegisterScopeSingletonChanged(System.Type type, ScopeChangedCallback callback)
-        {
-            if (_callbackTable.TryGetValue(type, out var callbacks))
-            {
-                callbacks.Remove(callback);
-            }
-        }
-
-        public void RegisterScopeSingletonChanged<T>(ScopeChangedCallback callback)
-            => RegisterScopeSingletonChanged(typeof(T), callback);
-
-        public void UnRegisterScopeSingletonChanged<T>(ScopeChangedCallback callback)
-            => UnRegisterScopeSingletonChanged(typeof(T), callback);
     }
 }

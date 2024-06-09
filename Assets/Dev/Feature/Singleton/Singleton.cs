@@ -12,7 +12,6 @@ namespace IndieLINY.Singleton
     public enum ESingletonType
     {
         Global,
-        Scope
     }
 
     [AttributeUsage(AttributeTargets.Class)]
