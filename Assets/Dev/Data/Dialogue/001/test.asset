@@ -13,21 +13,107 @@ MonoBehaviour:
   m_Name: test
   m_EditorClassIdentifier: 
   NodeLinks:
-  - BaseNodeGuid: 234db10b-3723-4461-825d-2723a055e111
+  - BaseNodeGuid: d7722981-80f4-4056-b7f5-efe70132b781
     PortName: Execute
-    TargetNodeGuid: f4207b07-823d-4552-83fc-2953823ca099
+    TargetNodeGuid: ba6915f0-9f57-4462-b6bf-0c76f1a35c4d
+  - BaseNodeGuid: ba6915f0-9f57-4462-b6bf-0c76f1a35c4d
+    PortName: Next
+    TargetNodeGuid: a1651f2e-2b80-4e43-b29b-84beb34c5b63
+  - BaseNodeGuid: a1651f2e-2b80-4e43-b29b-84beb34c5b63
+    PortName: Choice 1
+    TargetNodeGuid: d1b0f1d1-76ad-48b2-bf64-1892c2e2b9f0
+  - BaseNodeGuid: a1651f2e-2b80-4e43-b29b-84beb34c5b63
+    PortName: Choice 2
+    TargetNodeGuid: 04a195e1-91af-4d60-8eff-1422b4755a1e
+  - BaseNodeGuid: d1b0f1d1-76ad-48b2-bf64-1892c2e2b9f0
+    PortName: Next
+    TargetNodeGuid: 1a927d96-df46-4618-ba27-2397f41d9f59
+  - BaseNodeGuid: 1a927d96-df46-4618-ba27-2397f41d9f59
+    PortName: Next
+    TargetNodeGuid: 83f3e1a3-3aed-4764-a0cb-e1838f9cc897
+  - BaseNodeGuid: 83f3e1a3-3aed-4764-a0cb-e1838f9cc897
+    PortName: Choice 1
+    TargetNodeGuid: 79ab06c1-af50-45c9-aa15-c4b378bd4b96
+  - BaseNodeGuid: 83f3e1a3-3aed-4764-a0cb-e1838f9cc897
+    PortName: Choice 2
+    TargetNodeGuid: 107e76be-717f-4fa6-bf02-f0961421db6c
   NodeData:
-  - rid: 760269716121976832
+  - rid: 760269766177062912
+  - rid: 760269766177062913
+  - rid: 760269766177062914
+  - rid: 760269766177062915
+  - rid: 760269766177062916
+  - rid: 760269766177062917
+  - rid: 760269766177062918
+  - rid: 760269766177062919
   references:
     version: 2
     RefIds:
-    - rid: 760269716121976832
-      type: {class: NoChoiceNodeData, ns: DS.Runtime, asm: Assembly-CSharp}
+    - rid: 760269766177062912
+      type: {class: TextNodeData, ns: DS.Runtime, asm: Assembly-CSharp}
       data:
-        GUID: f4207b07-823d-4552-83fc-2953823ca099
-        NodeTitle: NoChoice Node
-        NodeType: 0
-        Position: {x: 335, y: 148}
-        TargetObjectID: 
-        DialogueText: cgvhjgfhfghgf
-        SkipDelay: 0
+        GUID: ba6915f0-9f57-4462-b6bf-0c76f1a35c4d
+        NodeTitle: Text
+        TypeName: Text
+        Position: {x: 279, y: 191}
+        DialogueText: "\uC5D8\uB808\uB098: \uC548\uB155\uD558\uC138\uC694. \uBC14
+          \uBD84\uC704\uAE30\uAC00 \uB418\uAC8C \uC88B\uB124\uC694."
+    - rid: 760269766177062913
+      type: {class: TextNodeData, ns: DS.Runtime, asm: Assembly-CSharp}
+      data:
+        GUID: 04a195e1-91af-4d60-8eff-1422b4755a1e
+        NodeTitle: Text
+        TypeName: Text
+        Position: {x: 1054, y: 387}
+        DialogueText: B_2
+    - rid: 760269766177062914
+      type: {class: BranchNodeData, ns: DS.Runtime, asm: Assembly-CSharp}
+      data:
+        GUID: a1651f2e-2b80-4e43-b29b-84beb34c5b63
+        NodeTitle: Branch
+        TypeName: Branch
+        Position: {x: 728, y: 199}
+    - rid: 760269766177062915
+      type: {class: TextNodeData, ns: DS.Runtime, asm: Assembly-CSharp}
+      data:
+        GUID: d1b0f1d1-76ad-48b2-bf64-1892c2e2b9f0
+        NodeTitle: Text
+        TypeName: Text
+        Position: {x: 1104, y: 97}
+        DialogueText: "\uC5D8\uB808\uB098: \uC694\uC998 \uB4E4\uC5B4 \uC544\uBC84\uC9C0\uC640
+          \uB9CE\uC774 \uC2F8\uC6CC\uC694. <br>\uC0AC\uACFC\uD558\uAE30\uB3C4 \uC27D\uC9C0\uC54A\uACE0\u2026"
+    - rid: 760269766177062916
+      type: {class: TextNodeData, ns: DS.Runtime, asm: Assembly-CSharp}
+      data:
+        GUID: 1a927d96-df46-4618-ba27-2397f41d9f59
+        NodeTitle: Text
+        TypeName: Text
+        Position: {x: 1682, y: 97}
+        DialogueText: "\uC5D8\uB808\uB098: <color=#6AFFFF>\uC6A9\uAE30</color>\uAC00
+          \uD544\uC694\uD560 \uAC83 \uAC19\uC544\uC694. \uD56D\uC0C1 \uC81C\uAC00
+          <br>\uBA3C\uC800 \uC0AC\uACFC\uD574\uC57C \uD480\uB9AC\uB294 \uC774 \uAD00\uACC4\uAC00
+          \uC880 \uC501\uC4F8\uD558\uAE34 <br>\uD558\uB124\uC694."
+    - rid: 760269766177062917
+      type: {class: TextNodeData, ns: DS.Runtime, asm: Assembly-CSharp}
+      data:
+        GUID: 107e76be-717f-4fa6-bf02-f0961421db6c
+        NodeTitle: Text
+        TypeName: Text
+        Position: {x: 2899, y: 190}
+        DialogueText: D_2
+    - rid: 760269766177062918
+      type: {class: BranchNodeData, ns: DS.Runtime, asm: Assembly-CSharp}
+      data:
+        GUID: 83f3e1a3-3aed-4764-a0cb-e1838f9cc897
+        NodeTitle: Branch
+        TypeName: Branch
+        Position: {x: 2586, y: 97}
+    - rid: 760269766177062919
+      type: {class: TextNodeData, ns: DS.Runtime, asm: Assembly-CSharp}
+      data:
+        GUID: 79ab06c1-af50-45c9-aa15-c4b378bd4b96
+        NodeTitle: Text
+        TypeName: Text
+        Position: {x: 2899, y: 43}
+        DialogueText: "\uC5D8\uB808\uB098: \uD750\uC74C\u2026... \uC220 \uD558\uB098
+          \uCD94\uCC9C\uD574\uC8FC\uC138\uC694."
